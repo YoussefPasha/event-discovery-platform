@@ -1,0 +1,107 @@
+{
+  "common": {
+    "search": "Search events...",
+    "filter": "Filter",
+    "category": "Category",
+    "location": "Location",
+    "date": "Date",
+    "price": "Price",
+    "free": "Free",
+    "paid": "Paid",
+    "all": "All",
+    "loading": "Loading...",
+    "error": "Something went wrong"
+  },
+  "nav": {
+    "events": "Events",
+    "tickets": "My Tickets",
+    "home": "Home"
+  },
+  "events": {
+    "title": "Discover Events",
+    "subtitle": "Find and book amazing events near you",
+    "noEvents": "No events found",
+    "featured": "Featured",
+    "attendees": "Attendees",
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "soldOut": "Sold Out",
+    "available": "Available",
+    "organizedBy": "Organized by",
+    "free": "Free"
+  },
+  "filters": {
+    "searchPlaceholder": "Search by title, description, or tags...",
+    "selectCategory": "Select Category",
+    "locationPlaceholder": "Enter city or country",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "priceRange": "Price Range",
+    "clearFilters": "Clear Filters",
+    "applyFilters": "Apply Filters"
+  },
+  "eventDetail": {
+    "aboutEvent": "About this event",
+    "eventDetails": "Event Details",
+    "venue": "Venue",
+    "city": "City",
+    "country": "Country",
+    "tags": "Tags",
+    "shareEvent": "Share Event",
+    "featured": "Featured",
+    "soldOut": "Sold Out",
+    "dateTime": "Date & Time",
+    "until": "Until",
+    "location": "Location",
+    "price": "Price",
+    "free": "Free",
+    "attendees": "Attendees",
+    "spotsLeft": "spots left",
+    "organizedBy": "Organized by",
+    "bookTicket": "Book Your Ticket"
+  },
+  "booking": {
+    "title": "Book Your Ticket",
+    "subtitle": "Complete the form below to book your ticket",
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "mobile": "Mobile Number",
+    "mobilePlaceholder": "+1234567890",
+    "selectDate": "Select Attendance Date",
+    "submit": "Confirm Booking",
+    "submitting": "Processing...",
+    "success": "Booking Confirmed!",
+    "successMessage": "Your ticket has been booked successfully. Redirecting to your tickets...",
+    "error": "Booking Failed",
+    "errorMessage": "Failed to book ticket. Please try again.",
+    "validationName": "Name must be at least 2 characters",
+    "validationEmail": "Please enter a valid email address",
+    "validationMobile": "Please enter a valid mobile number",
+    "validationDate": "Please select a date"
+  },
+  "tickets": {
+    "title": "My Tickets",
+    "subtitle": "View and manage your booked event tickets",
+    "ticketNumber": "Ticket Number",
+    "eventName": "Event Name",
+    "eventDate": "Event Date",
+    "bookingDate": "Booking Date",
+    "status": "Status",
+    "actions": "Actions",
+    "print": "Print",
+    "noTickets": "No tickets found",
+    "statusConfirmed": "Confirmed",
+    "statusPending": "Pending",
+    "statusCancelled": "Cancelled"
+  },
+  "footer": {
+    "copyright": "© 2025 Event Discovery Platform. All rights reserved.",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
+

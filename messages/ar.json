@@ -1,0 +1,107 @@
+{
+  "common": {
+    "search": "البحث عن الفعاليات...",
+    "filter": "تصفية",
+    "category": "الفئة",
+    "location": "الموقع",
+    "date": "التاريخ",
+    "price": "السعر",
+    "free": "مجاني",
+    "paid": "مدفوع",
+    "all": "الكل",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما"
+  },
+  "nav": {
+    "events": "الفعاليات",
+    "tickets": "تذاكري",
+    "home": "الرئيسية"
+  },
+  "events": {
+    "title": "اكتشف الفعاليات",
+    "subtitle": "ابحث واحجز فعاليات رائعة بالقرب منك",
+    "noEvents": "لم يتم العثور على فعاليات",
+    "featured": "مميز",
+    "attendees": "الحضور",
+    "bookNow": "احجز الآن",
+    "viewDetails": "عرض التفاصيل",
+    "soldOut": "نفذت الكمية",
+    "available": "متاح",
+    "organizedBy": "تنظيم",
+    "free": "مجاني"
+  },
+  "filters": {
+    "searchPlaceholder": "ابحث بالعنوان أو الوصف أو الوسوم...",
+    "selectCategory": "اختر الفئة",
+    "locationPlaceholder": "أدخل المدينة أو البلد",
+    "startDate": "تاريخ البدء",
+    "endDate": "تاريخ الانتهاء",
+    "priceRange": "نطاق السعر",
+    "clearFilters": "مسح الفلاتر",
+    "applyFilters": "تطبيق الفلاتر"
+  },
+  "eventDetail": {
+    "aboutEvent": "عن هذه الفعالية",
+    "eventDetails": "تفاصيل الفعالية",
+    "venue": "المكان",
+    "city": "المدينة",
+    "country": "البلد",
+    "tags": "الوسوم",
+    "shareEvent": "مشاركة الفعالية",
+    "featured": "مميز",
+    "soldOut": "نفذت الكمية",
+    "dateTime": "التاريخ والوقت",
+    "until": "حتى",
+    "location": "الموقع",
+    "price": "السعر",
+    "free": "مجاني",
+    "attendees": "الحضور",
+    "spotsLeft": "مقعد متبقي",
+    "organizedBy": "تنظيم",
+    "bookTicket": "احجز تذكرتك"
+  },
+  "booking": {
+    "title": "احجز تذكرتك",
+    "subtitle": "أكمل النموذج أدناه لحجز تذكرتك",
+    "name": "الاسم الكامل",
+    "namePlaceholder": "أحمد محمد",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "ahmed@example.com",
+    "mobile": "رقم الهاتف",
+    "mobilePlaceholder": "+966512345678",
+    "selectDate": "اختر تاريخ الحضور",
+    "submit": "تأكيد الحجز",
+    "submitting": "جاري المعالجة...",
+    "success": "تم تأكيد الحجز!",
+    "successMessage": "تم حجز تذكرتك بنجاح. جاري التوجيه إلى تذاكرك...",
+    "error": "فشل الحجز",
+    "errorMessage": "فشل حجز التذكرة. يرجى المحاولة مرة أخرى.",
+    "validationName": "يجب أن يكون الاسم على الأقل حرفين",
+    "validationEmail": "يرجى إدخال بريد إلكتروني صالح",
+    "validationMobile": "يرجى إدخال رقم هاتف صالح",
+    "validationDate": "يرجى اختيار تاريخ"
+  },
+  "tickets": {
+    "title": "تذاكري",
+    "subtitle": "عرض وإدارة تذاكر الفعاليات المحجوزة",
+    "ticketNumber": "رقم التذكرة",
+    "eventName": "اسم الفعالية",
+    "eventDate": "تاريخ الفعالية",
+    "bookingDate": "تاريخ الحجز",
+    "status": "الحالة",
+    "actions": "الإجراءات",
+    "print": "طباعة",
+    "noTickets": "لا توجد تذاكر",
+    "statusConfirmed": "مؤكد",
+    "statusPending": "قيد الانتظار",
+    "statusCancelled": "ملغى"
+  },
+  "footer": {
+    "copyright": "© 2025 منصة اكتشاف الفعاليات. جميع الحقوق محفوظة.",
+    "about": "عن",
+    "contact": "اتصل بنا",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الخدمة"
+  }
+}
+

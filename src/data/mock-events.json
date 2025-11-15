@@ -1,0 +1,806 @@
+[
+  {
+    "id": "1",
+    "slug": "tech-summit-dubai-2025",
+    "title": "Tech Summit Dubai 2025",
+    "description": "Join the biggest technology conference in the Middle East featuring AI, blockchain, and cloud computing innovations.",
+    "longDescription": "Tech Summit Dubai 2025 brings together industry leaders, innovators, and tech enthusiasts for three days of inspiring keynotes, hands-on workshops, and networking opportunities. Explore the latest in artificial intelligence, cloud computing, blockchain, and software development. Connect with over 1000 professionals from around the world and discover the future of technology in the MENA region.",
+    "date": "2025-12-15T09:00:00Z",
+    "endDate": "2025-12-17T18:00:00Z",
+    "location": {
+      "venue": "Dubai World Trade Centre",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Technology",
+    "tags": ["conference", "technology", "networking", "AI", "blockchain"],
+    "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=630",
+    "price": 299,
+    "attendeeCount": 745,
+    "maxAttendees": 1000,
+    "organizer": {
+      "name": "Tech Events MENA",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=TEM"
+    },
+    "featured": true,
+    "createdAt": "2025-10-01T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "slug": "arabic-music-festival-riyadh",
+    "title": "Arabic Music Festival",
+    "description": "Experience the best of traditional and contemporary Arabic music under the stars.",
+    "longDescription": "A celebration of Arabic music heritage featuring renowned artists from across the Middle East and North Africa. Enjoy traditional oud performances, modern Arabic pop, and fusion experiments that blend East and West. This outdoor festival promises an unforgettable evening of cultural celebration with food stalls, art exhibitions, and live performances from sunset to midnight.",
+    "date": "2025-12-20T19:00:00Z",
+    "location": {
+      "venue": "King Abdullah Park",
+      "city": "Riyadh",
+      "state": "Riyadh",
+      "country": "Saudi Arabia"
+    },
+    "category": "Music",
+    "tags": ["music", "festival", "culture", "outdoor", "family-friendly"],
+    "imageUrl": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 3200,
+    "maxAttendees": 5000,
+    "organizer": {
+      "name": "Cultural Events KSA",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=CEK"
+    },
+    "featured": true,
+    "createdAt": "2025-10-10T10:00:00Z"
+  },
+  {
+    "id": "3",
+    "slug": "startup-pitch-competition-cairo",
+    "title": "Startup Pitch Competition Cairo",
+    "description": "Watch innovative startups compete for VC funding and mentorship opportunities.",
+    "longDescription": "Egypt's premier startup competition where 20 selected startups pitch their ideas to a panel of investors and industry experts. Winners receive funding, mentorship, and access to a network of successful entrepreneurs. Categories include fintech, healthtech, edtech, and e-commerce. Whether you're an entrepreneur, investor, or just interested in innovation, this is the event to attend.",
+    "date": "2025-11-28T14:00:00Z",
+    "location": {
+      "venue": "Greek Campus",
+      "city": "Cairo",
+      "state": "Cairo",
+      "country": "Egypt"
+    },
+    "category": "Business",
+    "tags": ["startup", "entrepreneurship", "investment", "networking", "innovation"],
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&h=630",
+    "price": 50,
+    "attendeeCount": 180,
+    "maxAttendees": 300,
+    "organizer": {
+      "name": "Egypt Startup Hub",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=ESH"
+    },
+    "featured": false,
+    "createdAt": "2025-10-05T10:00:00Z"
+  },
+  {
+    "id": "4",
+    "slug": "contemporary-art-exhibition-doha",
+    "title": "Contemporary Art Exhibition",
+    "description": "Explore cutting-edge contemporary art from Middle Eastern and international artists.",
+    "longDescription": "This month-long exhibition showcases the work of 50+ contemporary artists from the Middle East and around the world. Featuring paintings, sculptures, digital art, and installations that challenge perspectives and inspire dialogue. Daily guided tours, artist talks, and workshops available. A must-see for art enthusiasts and collectors.",
+    "date": "2025-12-01T10:00:00Z",
+    "endDate": "2025-12-30T20:00:00Z",
+    "location": {
+      "venue": "Mathaf: Arab Museum of Modern Art",
+      "city": "Doha",
+      "state": "Doha",
+      "country": "Qatar"
+    },
+    "category": "Art",
+    "tags": ["art", "exhibition", "culture", "contemporary", "gallery"],
+    "imageUrl": "https://images.unsplash.com/photo-1531243269054-5ebf6f34081e?w=1200&h=630",
+    "price": 25,
+    "attendeeCount": 892,
+    "maxAttendees": 2000,
+    "organizer": {
+      "name": "Qatar Museums",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=QM"
+    },
+    "featured": false,
+    "createdAt": "2025-09-15T10:00:00Z"
+  },
+  {
+    "id": "5",
+    "slug": "marathon-beirut-2025",
+    "title": "Beirut Marathon 2025",
+    "description": "Join thousands of runners in Lebanon's biggest marathon event.",
+    "longDescription": "The annual Beirut Marathon brings together runners from around the world for a scenic route through the heart of Lebanon's capital. Choose from full marathon (42km), half marathon (21km), or 10km fun run. All proceeds support local charities. Includes race kit, medal, and post-race celebration with food and entertainment.",
+    "date": "2025-11-30T07:00:00Z",
+    "location": {
+      "venue": "Beirut Waterfront",
+      "city": "Beirut",
+      "state": "Beirut",
+      "country": "Lebanon"
+    },
+    "category": "Sports",
+    "tags": ["marathon", "running", "sports", "fitness", "charity"],
+    "imageUrl": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=1200&h=630",
+    "price": 35,
+    "attendeeCount": 4500,
+    "maxAttendees": 8000,
+    "organizer": {
+      "name": "Beirut Marathon Association",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=BMA"
+    },
+    "featured": true,
+    "createdAt": "2025-08-01T10:00:00Z"
+  },
+  {
+    "id": "6",
+    "slug": "food-festival-abu-dhabi",
+    "title": "Abu Dhabi Food Festival",
+    "description": "A culinary journey featuring international and local cuisine from top chefs.",
+    "longDescription": "Indulge in a week-long celebration of gastronomy featuring renowned chefs, cooking demonstrations, food trucks, and tasting sessions. Experience flavors from around the world and discover local Emirati cuisine. Special events include wine pairing dinners, dessert competitions, and late-night food markets. Perfect for food lovers and families.",
+    "date": "2025-12-05T16:00:00Z",
+    "endDate": "2025-12-12T23:00:00Z",
+    "location": {
+      "venue": "Corniche Beach Park",
+      "city": "Abu Dhabi",
+      "state": "Abu Dhabi",
+      "country": "UAE"
+    },
+    "category": "Food",
+    "tags": ["food", "festival", "cooking", "family", "entertainment"],
+    "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 5600,
+    "maxAttendees": 10000,
+    "organizer": {
+      "name": "Abu Dhabi Tourism",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=ADT"
+    },
+    "featured": true,
+    "createdAt": "2025-09-20T10:00:00Z"
+  },
+  {
+    "id": "7",
+    "slug": "digital-marketing-workshop-amman",
+    "title": "Digital Marketing Masterclass",
+    "description": "Learn the latest digital marketing strategies from industry experts.",
+    "longDescription": "An intensive two-day workshop covering SEO, social media marketing, content strategy, and analytics. Led by international digital marketing experts with hands-on exercises and real-world case studies. Participants will leave with actionable strategies and a digital marketing roadmap. Includes certificate of completion, networking lunch, and access to exclusive resources.",
+    "date": "2025-11-25T09:00:00Z",
+    "endDate": "2025-11-26T17:00:00Z",
+    "location": {
+      "venue": "Zara Expo",
+      "city": "Amman",
+      "state": "Amman",
+      "country": "Jordan"
+    },
+    "category": "Business",
+    "tags": ["workshop", "marketing", "digital", "training", "professional"],
+    "imageUrl": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&h=630",
+    "price": 180,
+    "attendeeCount": 95,
+    "maxAttendees": 150,
+    "organizer": {
+      "name": "Jordan Business Academy",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=JBA"
+    },
+    "featured": false,
+    "createdAt": "2025-10-08T10:00:00Z"
+  },
+  {
+    "id": "8",
+    "slug": "jazz-night-casablanca",
+    "title": "Casablanca Jazz Night",
+    "description": "An elegant evening of smooth jazz in Morocco's cultural heart.",
+    "longDescription": "Experience an unforgettable night of live jazz featuring local and international artists in an intimate venue. Enjoy cocktails, gourmet appetizers, and world-class performances in Casablanca's premier jazz club. The evening features three acts including traditional jazz, modern fusion, and special surprise guests. Dress code: Smart casual.",
+    "date": "2025-12-08T20:00:00Z",
+    "location": {
+      "venue": "Le Studio des Arts Vivants",
+      "city": "Casablanca",
+      "state": "Casablanca-Settat",
+      "country": "Morocco"
+    },
+    "category": "Music",
+    "tags": ["jazz", "music", "nightlife", "entertainment", "concert"],
+    "imageUrl": "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=1200&h=630",
+    "price": 65,
+    "attendeeCount": 120,
+    "maxAttendees": 200,
+    "organizer": {
+      "name": "Morocco Jazz Foundation",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MJF"
+    },
+    "featured": false,
+    "createdAt": "2025-10-12T10:00:00Z"
+  },
+  {
+    "id": "9",
+    "slug": "blockchain-conference-dubai",
+    "title": "Middle East Blockchain Summit",
+    "description": "Explore the future of blockchain technology and cryptocurrency in the region.",
+    "longDescription": "The premier blockchain conference in the Middle East bringing together developers, investors, regulators, and enthusiasts. Topics include DeFi, NFTs, smart contracts, cryptocurrency regulation, and enterprise blockchain solutions. Features keynotes from global blockchain pioneers, panel discussions, startup showcases, and networking sessions. Don't miss this opportunity to be part of the blockchain revolution.",
+    "date": "2025-12-10T09:00:00Z",
+    "endDate": "2025-12-11T18:00:00Z",
+    "location": {
+      "venue": "Atlantis The Palm",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Technology",
+    "tags": ["blockchain", "cryptocurrency", "fintech", "conference", "innovation"],
+    "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630",
+    "price": 450,
+    "attendeeCount": 520,
+    "maxAttendees": 800,
+    "organizer": {
+      "name": "MENA Blockchain Alliance",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MBA"
+    },
+    "featured": true,
+    "createdAt": "2025-09-25T10:00:00Z"
+  },
+  {
+    "id": "10",
+    "slug": "photography-workshop-kuwait",
+    "title": "Professional Photography Workshop",
+    "description": "Master the art of photography with hands-on training from award-winning photographers.",
+    "longDescription": "A comprehensive three-day workshop covering portrait, landscape, and street photography. Learn advanced techniques in lighting, composition, and post-processing. Includes outdoor photo walks, studio sessions, and one-on-one critique sessions with professional photographers. All skill levels welcome. Camera equipment provided for those who need it.",
+    "date": "2025-12-13T10:00:00Z",
+    "endDate": "2025-12-15T16:00:00Z",
+    "location": {
+      "venue": "Kuwait Photography Center",
+      "city": "Kuwait City",
+      "state": "Al Asimah",
+      "country": "Kuwait"
+    },
+    "category": "Art",
+    "tags": ["photography", "workshop", "art", "training", "creative"],
+    "imageUrl": "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=1200&h=630",
+    "price": 220,
+    "attendeeCount": 28,
+    "maxAttendees": 40,
+    "organizer": {
+      "name": "Kuwait Arts Institute",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=KAI"
+    },
+    "featured": false,
+    "createdAt": "2025-10-15T10:00:00Z"
+  },
+  {
+    "id": "11",
+    "slug": "yoga-retreat-oman",
+    "title": "Wellness & Yoga Retreat",
+    "description": "A transformative wellness experience in the serene mountains of Oman.",
+    "longDescription": "Escape to the peaceful mountains of Oman for a rejuvenating yoga and wellness retreat. Five days of daily yoga sessions, meditation, healthy cuisine, spa treatments, and nature walks. Led by certified international yoga instructors and wellness coaches. Accommodation in luxury eco-lodges with stunning mountain views. Perfect for beginners and experienced practitioners seeking balance and renewal.",
+    "date": "2025-12-18T15:00:00Z",
+    "endDate": "2025-12-23T12:00:00Z",
+    "location": {
+      "venue": "Alila Jabal Akhdar",
+      "city": "Nizwa",
+      "state": "Ad Dakhiliyah",
+      "country": "Oman"
+    },
+    "category": "Sports",
+    "tags": ["yoga", "wellness", "retreat", "meditation", "health"],
+    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&h=630",
+    "price": 850,
+    "attendeeCount": 24,
+    "maxAttendees": 30,
+    "organizer": {
+      "name": "Oman Wellness Retreats",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=OWR"
+    },
+    "featured": false,
+    "createdAt": "2025-09-30T10:00:00Z"
+  },
+  {
+    "id": "12",
+    "slug": "gaming-expo-jeddah",
+    "title": "MENA Gaming Expo 2025",
+    "description": "The biggest gaming and esports event in the Middle East.",
+    "longDescription": "Join thousands of gamers for the ultimate gaming experience! Features major esports tournaments with substantial prize pools, exclusive game previews, meet & greets with professional gamers and streamers, virtual reality experiences, retro gaming arcade, and exhibitor booths from top gaming companies. Competitions across multiple games including FIFA, League of Legends, and Fortnite.",
+    "date": "2025-12-22T10:00:00Z",
+    "endDate": "2025-12-24T22:00:00Z",
+    "location": {
+      "venue": "Jeddah Superdome",
+      "city": "Jeddah",
+      "state": "Makkah",
+      "country": "Saudi Arabia"
+    },
+    "category": "Technology",
+    "tags": ["gaming", "esports", "entertainment", "technology", "competition"],
+    "imageUrl": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&h=630",
+    "price": 75,
+    "attendeeCount": 6800,
+    "maxAttendees": 12000,
+    "organizer": {
+      "name": "MENA Gaming Federation",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MGF"
+    },
+    "featured": true,
+    "createdAt": "2025-09-10T10:00:00Z"
+  },
+  {
+    "id": "13",
+    "slug": "book-fair-sharjah",
+    "title": "Sharjah International Book Fair",
+    "description": "Celebrate literature and culture at one of the world's largest book fairs.",
+    "longDescription": "The Sharjah International Book Fair is an annual celebration of literature, knowledge, and culture. With over 1,500 exhibitors from around the world, millions of books across all genres, author signings, panel discussions, children's activities, and cultural performances. This year's guest of honor country features special pavilions and events. Free entry for all.",
+    "date": "2025-11-27T10:00:00Z",
+    "endDate": "2025-12-07T22:00:00Z",
+    "location": {
+      "venue": "Expo Centre Sharjah",
+      "city": "Sharjah",
+      "state": "Sharjah",
+      "country": "UAE"
+    },
+    "category": "Art",
+    "tags": ["books", "literature", "culture", "education", "family"],
+    "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 15000,
+    "maxAttendees": 50000,
+    "organizer": {
+      "name": "Sharjah Book Authority",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=SBA"
+    },
+    "featured": false,
+    "createdAt": "2025-08-15T10:00:00Z"
+  },
+  {
+    "id": "14",
+    "slug": "fashion-week-dubai",
+    "title": "Dubai Fashion Week",
+    "description": "Witness the latest trends from Middle Eastern and international designers.",
+    "longDescription": "Dubai Fashion Week showcases the best of haute couture and ready-to-wear collections from established and emerging designers. A week of runway shows, presentations, trunk shows, and exclusive shopping opportunities. Features both Middle Eastern designers bringing regional aesthetics to the global stage and international brands showcasing their latest collections. VIP packages include front-row seating and designer meet & greets.",
+    "date": "2025-12-03T19:00:00Z",
+    "endDate": "2025-12-08T23:00:00Z",
+    "location": {
+      "venue": "Dubai Design District",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Art",
+    "tags": ["fashion", "design", "luxury", "runway", "style"],
+    "imageUrl": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1200&h=630",
+    "price": 350,
+    "attendeeCount": 890,
+    "maxAttendees": 1500,
+    "organizer": {
+      "name": "Dubai Fashion Council",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=DFC"
+    },
+    "featured": true,
+    "createdAt": "2025-09-18T10:00:00Z"
+  },
+  {
+    "id": "15",
+    "slug": "coding-bootcamp-cairo",
+    "title": "Full Stack Development Bootcamp",
+    "description": "Intensive 4-week bootcamp to become a full-stack web developer.",
+    "longDescription": "Transform your career with our intensive full-stack development bootcamp. Learn HTML, CSS, JavaScript, React, Node.js, and database management through hands-on projects. Includes career coaching, portfolio development, and job placement assistance. Taught by experienced developers from top tech companies. No prior coding experience required. Laptop provided. Morning and evening batches available.",
+    "date": "2025-11-20T09:00:00Z",
+    "endDate": "2025-12-17T18:00:00Z",
+    "location": {
+      "venue": "Tech Hub Cairo",
+      "city": "Cairo",
+      "state": "Cairo",
+      "country": "Egypt"
+    },
+    "category": "Technology",
+    "tags": ["coding", "bootcamp", "training", "web-development", "career"],
+    "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=630",
+    "price": 450,
+    "attendeeCount": 42,
+    "maxAttendees": 50,
+    "organizer": {
+      "name": "Code Academy Egypt",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=CAE"
+    },
+    "featured": false,
+    "createdAt": "2025-09-28T10:00:00Z"
+  },
+  {
+    "id": "16",
+    "slug": "comedy-night-dubai",
+    "title": "Stand-Up Comedy Night",
+    "description": "Laugh out loud with top Middle Eastern and international comedians.",
+    "longDescription": "Get ready for a night of non-stop laughter featuring a stellar lineup of comedians from across the Middle East and international circuit. Three hours of stand-up comedy with multiple acts covering observational humor, storytelling, and improvisation. Includes dinner and drinks. Age 18+. Shows in both English and Arabic throughout the evening.",
+    "date": "2025-12-14T20:00:00Z",
+    "location": {
+      "venue": "The Laughter Factory Dubai",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Entertainment",
+    "tags": ["comedy", "entertainment", "nightlife", "stand-up", "show"],
+    "imageUrl": "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=1200&h=630",
+    "price": 85,
+    "attendeeCount": 245,
+    "maxAttendees": 400,
+    "organizer": {
+      "name": "Dubai Comedy Club",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=DCC"
+    },
+    "featured": false,
+    "createdAt": "2025-10-20T10:00:00Z"
+  },
+  {
+    "id": "17",
+    "slug": "film-festival-marrakech",
+    "title": "Marrakech International Film Festival",
+    "description": "Celebrate cinema from around the world in Morocco's cultural capital.",
+    "longDescription": "The prestigious Marrakech International Film Festival returns with a curated selection of international and Moroccan films. Features world premieres, retrospectives, masterclasses with renowned filmmakers, and red carpet events. Screenings take place in multiple venues across the city including the iconic Jemaa el-Fnaa square. A celebration of cinematic art and cultural exchange.",
+    "date": "2025-11-29T18:00:00Z",
+    "endDate": "2025-12-06T23:00:00Z",
+    "location": {
+      "venue": "Palais des Congrès",
+      "city": "Marrakech",
+      "state": "Marrakech-Safi",
+      "country": "Morocco"
+    },
+    "category": "Entertainment",
+    "tags": ["film", "cinema", "festival", "culture", "international"],
+    "imageUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&h=630",
+    "price": 40,
+    "attendeeCount": 3400,
+    "maxAttendees": 8000,
+    "organizer": {
+      "name": "Marrakech Film Foundation",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MFF"
+    },
+    "featured": false,
+    "createdAt": "2025-08-25T10:00:00Z"
+  },
+  {
+    "id": "18",
+    "slug": "sustainability-summit-abu-dhabi",
+    "title": "Middle East Sustainability Summit",
+    "description": "Leading voices in sustainability discuss climate action and green innovation.",
+    "longDescription": "A two-day summit bringing together government officials, business leaders, scientists, and activists to discuss sustainability challenges and solutions in the MENA region. Topics include renewable energy, water conservation, sustainable cities, circular economy, and climate finance. Features keynotes from global sustainability leaders, panel discussions, innovation showcases, and networking opportunities. Shape the future of sustainability in the region.",
+    "date": "2025-12-09T09:00:00Z",
+    "endDate": "2025-12-10T17:00:00Z",
+    "location": {
+      "venue": "Masdar City Conference Centre",
+      "city": "Abu Dhabi",
+      "state": "Abu Dhabi",
+      "country": "UAE"
+    },
+    "category": "Business",
+    "tags": ["sustainability", "environment", "conference", "green-energy", "innovation"],
+    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=630",
+    "price": 275,
+    "attendeeCount": 620,
+    "maxAttendees": 1000,
+    "organizer": {
+      "name": "MENA Sustainability Council",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MSC"
+    },
+    "featured": true,
+    "createdAt": "2025-09-22T10:00:00Z"
+  },
+  {
+    "id": "19",
+    "slug": "classical-music-concert-alexandria",
+    "title": "Alexandria Philharmonic Orchestra",
+    "description": "An enchanting evening of classical masterpieces by the sea.",
+    "longDescription": "Experience the beauty of classical music performed by the renowned Alexandria Philharmonic Orchestra. The program features works by Beethoven, Mozart, Tchaikovsky, and contemporary Middle Eastern composers. Conducted by acclaimed maestro Ahmed El-Saedi. The historic Bibliotheca Alexandrina provides a stunning acoustical and architectural setting for this unforgettable musical journey.",
+    "date": "2025-12-16T19:30:00Z",
+    "location": {
+      "venue": "Bibliotheca Alexandrina",
+      "city": "Alexandria",
+      "state": "Alexandria",
+      "country": "Egypt"
+    },
+    "category": "Music",
+    "tags": ["classical", "orchestra", "music", "concert", "culture"],
+    "imageUrl": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=1200&h=630",
+    "price": 55,
+    "attendeeCount": 420,
+    "maxAttendees": 800,
+    "organizer": {
+      "name": "Bibliotheca Alexandrina Arts",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=BAA"
+    },
+    "featured": false,
+    "createdAt": "2025-10-18T10:00:00Z"
+  },
+  {
+    "id": "20",
+    "slug": "kids-science-fair-dubai",
+    "title": "Dubai Kids Science Fair",
+    "description": "Interactive science exhibits and experiments for curious young minds.",
+    "longDescription": "A fun-filled weekend of hands-on science activities for children ages 5-15. Features interactive exhibits, live experiments, robot demonstrations, planetarium shows, coding workshops, and science shows. Meet real scientists and engineers. Activities designed to spark curiosity and make learning fun. Includes workshops on space exploration, robotics, chemistry, and environmental science. Parents and teachers free with child admission.",
+    "date": "2025-12-06T10:00:00Z",
+    "endDate": "2025-12-07T18:00:00Z",
+    "location": {
+      "venue": "Dubai Science Park",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Education",
+    "tags": ["science", "education", "kids", "family", "interactive"],
+    "imageUrl": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1200&h=630",
+    "price": 20,
+    "attendeeCount": 1250,
+    "maxAttendees": 3000,
+    "organizer": {
+      "name": "Dubai Science Foundation",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=DSF"
+    },
+    "featured": false,
+    "createdAt": "2025-10-22T10:00:00Z"
+  },
+  {
+    "id": "21",
+    "slug": "real-estate-expo-riyadh",
+    "title": "Saudi Real Estate Expo",
+    "description": "Explore investment opportunities in Saudi Arabia's booming property market.",
+    "longDescription": "The largest real estate exhibition in Saudi Arabia showcasing residential, commercial, and luxury properties. Meet with leading developers, real estate agencies, and investment firms. Seminars on market trends, financing options, and Vision 2030 megaprojects. Special focus on NEOM, Red Sea Project, and Riyadh's expansion. Perfect for investors, first-time buyers, and industry professionals.",
+    "date": "2025-12-11T10:00:00Z",
+    "endDate": "2025-12-13T20:00:00Z",
+    "location": {
+      "venue": "Riyadh International Convention Center",
+      "city": "Riyadh",
+      "state": "Riyadh",
+      "country": "Saudi Arabia"
+    },
+    "category": "Business",
+    "tags": ["real-estate", "investment", "property", "business", "expo"],
+    "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 8900,
+    "maxAttendees": 15000,
+    "organizer": {
+      "name": "Saudi Real Estate Authority",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=SREA"
+    },
+    "featured": false,
+    "createdAt": "2025-09-12T10:00:00Z"
+  },
+  {
+    "id": "22",
+    "slug": "edm-festival-beirut",
+    "title": "Beirut Electronic Music Festival",
+    "description": "Dance the night away with world-class DJs and electronic music producers.",
+    "longDescription": "Lebanon's biggest electronic dance music festival returns with an incredible lineup of international and regional DJs. Three stages featuring house, techno, trance, and dubstep. State-of-the-art sound and lighting systems create an immersive experience. VIP areas with exclusive bars and lounges. Age 18+. Shuttle buses from Beirut center. Don't miss the after-parties at premier clubs across the city.",
+    "date": "2025-12-19T20:00:00Z",
+    "endDate": "2025-12-20T06:00:00Z",
+    "location": {
+      "venue": "Beirut Waterfront District",
+      "city": "Beirut",
+      "state": "Beirut",
+      "country": "Lebanon"
+    },
+    "category": "Music",
+    "tags": ["edm", "festival", "electronic", "nightlife", "dance"],
+    "imageUrl": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&h=630",
+    "price": 95,
+    "attendeeCount": 4200,
+    "maxAttendees": 8000,
+    "organizer": {
+      "name": "Beirut Nights Entertainment",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=BNE"
+    },
+    "featured": true,
+    "createdAt": "2025-10-05T10:00:00Z"
+  },
+  {
+    "id": "23",
+    "slug": "leadership-conference-dubai",
+    "title": "Global Leadership Summit",
+    "description": "Insights from world leaders on effective leadership in the modern era.",
+    "longDescription": "An exclusive conference bringing together CEOs, government leaders, and thought leaders to discuss the future of leadership. Topics include digital transformation, diversity and inclusion, crisis management, and building resilient organizations. Features keynotes from Fortune 500 CEOs, interactive workshops, and high-level networking opportunities. Limited to 500 senior executives and managers.",
+    "date": "2025-12-04T08:00:00Z",
+    "endDate": "2025-12-05T18:00:00Z",
+    "location": {
+      "venue": "Burj Al Arab",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Business",
+    "tags": ["leadership", "business", "conference", "executive", "networking"],
+    "imageUrl": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&h=630",
+    "price": 850,
+    "attendeeCount": 385,
+    "maxAttendees": 500,
+    "organizer": {
+      "name": "Global Leadership Institute",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=GLI"
+    },
+    "featured": false,
+    "createdAt": "2025-09-08T10:00:00Z"
+  },
+  {
+    "id": "24",
+    "slug": "craft-market-amman",
+    "title": "Amman Artisan Craft Market",
+    "description": "Discover handmade crafts, jewelry, and traditional Jordanian products.",
+    "longDescription": "A vibrant marketplace celebrating Jordanian craftsmanship and creativity. Browse unique handmade items including ceramics, textiles, jewelry, leather goods, and traditional Palestinian embroidery. Meet the artisans, learn about traditional techniques, and support local businesses. Live music, food stalls serving traditional Jordanian cuisine, and kids' activities make this a perfect family outing.",
+    "date": "2025-12-07T10:00:00Z",
+    "endDate": "2025-12-08T20:00:00Z",
+    "location": {
+      "venue": "Rainbow Street",
+      "city": "Amman",
+      "state": "Amman",
+      "country": "Jordan"
+    },
+    "category": "Art",
+    "tags": ["crafts", "market", "handmade", "local", "shopping"],
+    "imageUrl": "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 2100,
+    "maxAttendees": 5000,
+    "organizer": {
+      "name": "Jordan Crafts Association",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=JCA"
+    },
+    "featured": false,
+    "createdAt": "2025-10-25T10:00:00Z"
+  },
+  {
+    "id": "25",
+    "slug": "health-wellness-expo-kuwait",
+    "title": "Kuwait Health & Wellness Expo",
+    "description": "Your guide to a healthier lifestyle with experts and exhibitors.",
+    "longDescription": "A comprehensive health and wellness exhibition featuring fitness demonstrations, nutritional advice, mental health workshops, and preventive care information. Over 200 exhibitors including hospitals, fitness centers, wellness brands, and healthy food companies. Free health screenings, yoga classes, cooking demonstrations, and talks by medical professionals. Activities for all ages promoting healthy living.",
+    "date": "2025-11-26T09:00:00Z",
+    "endDate": "2025-11-28T21:00:00Z",
+    "location": {
+      "venue": "Kuwait International Fair",
+      "city": "Kuwait City",
+      "state": "Al Asimah",
+      "country": "Kuwait"
+    },
+    "category": "Sports",
+    "tags": ["health", "wellness", "fitness", "nutrition", "lifestyle"],
+    "imageUrl": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 4500,
+    "maxAttendees": 10000,
+    "organizer": {
+      "name": "Kuwait Health Ministry",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=KHM"
+    },
+    "featured": false,
+    "createdAt": "2025-09-05T10:00:00Z"
+  },
+  {
+    "id": "26",
+    "slug": "drone-racing-championship-dubai",
+    "title": "World Drone Racing Championship",
+    "description": "Watch elite pilots compete in high-speed drone racing competitions.",
+    "longDescription": "The World Drone Racing Championship comes to Dubai with the world's fastest FPV drone pilots competing for the grand prize. Experience the thrill of drones racing at speeds up to 200km/h through complex 3D courses. Includes beginner workshops, drone exhibitions, and opportunities to try flying drones yourself. VR experiences let you see the course from the pilot's perspective. A must-see for tech enthusiasts and racing fans.",
+    "date": "2025-12-21T14:00:00Z",
+    "endDate": "2025-12-22T22:00:00Z",
+    "location": {
+      "venue": "Dubai Autodrome",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "category": "Sports",
+    "tags": ["drones", "racing", "technology", "competition", "sports"],
+    "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1200&h=630",
+    "price": 60,
+    "attendeeCount": 1850,
+    "maxAttendees": 5000,
+    "organizer": {
+      "name": "International Drone Racing Association",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=IDRA"
+    },
+    "featured": false,
+    "createdAt": "2025-10-10T10:00:00Z"
+  },
+  {
+    "id": "27",
+    "slug": "tea-festival-marrakech",
+    "title": "Marrakech International Tea Festival",
+    "description": "Celebrate the art of tea with tastings, ceremonies, and cultural performances.",
+    "longDescription": "A unique festival dedicated to the ancient tradition of tea. Sample premium teas from Morocco, China, India, Japan, and around the world. Attend traditional tea ceremonies, learn about tea cultivation and preparation, and enjoy tea-paired culinary experiences. Cultural performances, artisan market, and workshops on tea benefits and brewing techniques. Set in the beautiful surroundings of Majorelle Garden.",
+    "date": "2025-12-12T10:00:00Z",
+    "endDate": "2025-12-14T19:00:00Z",
+    "location": {
+      "venue": "Majorelle Garden",
+      "city": "Marrakech",
+      "state": "Marrakech-Safi",
+      "country": "Morocco"
+    },
+    "category": "Food",
+    "tags": ["tea", "culture", "food", "festival", "tradition"],
+    "imageUrl": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=1200&h=630",
+    "price": 30,
+    "attendeeCount": 680,
+    "maxAttendees": 1500,
+    "organizer": {
+      "name": "Morocco Tea Association",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MTA"
+    },
+    "featured": false,
+    "createdAt": "2025-10-28T10:00:00Z"
+  },
+  {
+    "id": "28",
+    "slug": "ai-robotics-expo-doha",
+    "title": "AI & Robotics Innovation Expo",
+    "description": "Explore the cutting edge of artificial intelligence and robotics technology.",
+    "longDescription": "The premier showcase of AI and robotics innovation in the Gulf region. See live demonstrations of humanoid robots, AI-powered solutions, autonomous vehicles, and industrial automation. Features startup pitches, investor meetings, academic research presentations, and discussions on AI ethics and regulation. Interactive exhibits allow hands-on experience with the latest technologies. Essential for anyone interested in the future of AI.",
+    "date": "2025-11-24T09:00:00Z",
+    "endDate": "2025-11-26T18:00:00Z",
+    "location": {
+      "venue": "Qatar National Convention Centre",
+      "city": "Doha",
+      "state": "Doha",
+      "country": "Qatar"
+    },
+    "category": "Technology",
+    "tags": ["AI", "robotics", "innovation", "technology", "expo"],
+    "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630",
+    "price": 120,
+    "attendeeCount": 1450,
+    "maxAttendees": 3000,
+    "organizer": {
+      "name": "Qatar Innovation Hub",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=QIH"
+    },
+    "featured": true,
+    "createdAt": "2025-08-20T10:00:00Z"
+  },
+  {
+    "id": "29",
+    "slug": "street-food-festival-cairo",
+    "title": "Cairo Street Food Festival",
+    "description": "Taste authentic Egyptian street food from the best vendors in the city.",
+    "longDescription": "Celebrate Egypt's vibrant street food culture with over 50 vendors serving traditional favorites and modern fusion creations. From koshari and ta'ameya to hawawshi and umm ali, experience the flavors that make Cairo's food scene legendary. Live music, cooking demonstrations by celebrity chefs, and family entertainment. Support local businesses and discover new culinary adventures. Cash and card accepted.",
+    "date": "2025-12-05T16:00:00Z",
+    "endDate": "2025-12-06T23:00:00Z",
+    "location": {
+      "venue": "Al-Azhar Park",
+      "city": "Cairo",
+      "state": "Cairo",
+      "country": "Egypt"
+    },
+    "category": "Food",
+    "tags": ["food", "street-food", "festival", "egyptian", "culture"],
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 5800,
+    "maxAttendees": 12000,
+    "organizer": {
+      "name": "Cairo Food Collective",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=CFC"
+    },
+    "featured": false,
+    "createdAt": "2025-10-30T10:00:00Z"
+  },
+  {
+    "id": "30",
+    "slug": "poetry-evening-muscat",
+    "title": "Arabian Poetry Evening",
+    "description": "An enchanting night of classical and contemporary Arabic poetry.",
+    "longDescription": "Immerse yourself in the rich tradition of Arabic poetry with performances by renowned poets from across the Arab world. Experience both classical qasidas and contemporary free verse exploring themes of love, identity, and social commentary. Bilingual presentations with English translations. Includes post-performance discussion and book signing. Refreshments inspired by Arabic literary cafés of the past. Limited seating for an intimate atmosphere.",
+    "date": "2025-12-17T19:00:00Z",
+    "location": {
+      "venue": "Royal Opera House Muscat",
+      "city": "Muscat",
+      "state": "Muscat",
+      "country": "Oman"
+    },
+    "category": "Art",
+    "tags": ["poetry", "literature", "culture", "arabic", "performance"],
+    "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&h=630",
+    "price": 45,
+    "attendeeCount": 280,
+    "maxAttendees": 400,
+    "organizer": {
+      "name": "Oman Cultural Society",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=OCS"
+    },
+    "featured": false,
+    "createdAt": "2025-11-01T10:00:00Z"
+  }
+]
+
