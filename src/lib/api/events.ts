@@ -12,7 +12,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
  */
 function localizeEvent(event: LocalizedEvent, locale: Locale): Event {
   console.log(event.title[locale]);
-  
+
   return {
     id: event.id,
     slug: event.slug[locale],
@@ -115,7 +115,9 @@ export async function getEventBySlug(
 
   const localizedEvents = mockEvents as LocalizedEvent[];
   const event = localizedEvents.find(
-    (e) => e.slug.ar === slug || e.slug.en === slug
+    (e) =>
+      decodeURIComponent(e.slug.ar) === decodeURIComponent(slug) ||
+      decodeURIComponent(e.slug.en) === decodeURIComponent(slug)
   );
 
   if (!event) return null;
