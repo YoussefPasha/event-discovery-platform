@@ -10,7 +10,9 @@
     "paid": "Paid",
     "all": "All",
     "loading": "Loading...",
-    "error": "Something went wrong"
+    "error": "Something went wrong",
+    "en": "English",
+    "ar": "العربية"
   },
   "nav": {
     "events": "Events",
