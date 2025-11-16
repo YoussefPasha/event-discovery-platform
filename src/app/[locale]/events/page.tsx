@@ -53,7 +53,7 @@ async function getEvents(
     const baseUrl = getBaseUrl();
     const url = `${baseUrl}/api/events?${decodeURIComponent(
       queryParams.toString()
-    )}`;
+    )}&locale=${locale}`;
 
     const response = await fetch(url, {
       method: "GET",

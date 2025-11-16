@@ -23,6 +23,8 @@
     "title": "اكتشف الفعاليات",
     "subtitle": "ابحث واحجز فعاليات رائعة بالقرب منك",
     "noEvents": "لم يتم العثور على فعاليات",
+    "noEventsDescription": "حاول تعديل الفلاتر أو مصطلحات البحث",
+    "foundEvents": "تم العثور على {count} {count, plural, one {فعالية} other {فعاليات}}",
     "featured": "مميز",
     "attendees": "الحضور",
     "bookNow": "احجز الآن",

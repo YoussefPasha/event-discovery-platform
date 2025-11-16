@@ -1,14 +1,12 @@
 import { Locale } from "@/constants/locales";
 import { getEvents } from "@/lib/api/events";
 import { EventFilters } from "@/types/event";
-import { getLocale } from "next-intl/server";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
-
-    const locale = await getLocale();
+    const locale = searchParams.get("locale") as Locale;
 
     const filters: EventFilters = {
       search: searchParams.get("search") || undefined,

@@ -23,6 +23,8 @@
     "title": "Discover Events",
     "subtitle": "Find and book amazing events near you",
     "noEvents": "No events found",
+    "noEventsDescription": "Try adjusting your filters or search terms",
+    "foundEvents": "Found {count} {count, plural, one {event} other {events}}",
     "featured": "Featured",
     "attendees": "Attendees",
     "bookNow": "Book Now",
