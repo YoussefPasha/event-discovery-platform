@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import QueryProvider from "@/components/providers/QueryProvider";
 import "../globals.css";
 import { dir } from "@/lib/utils/dir";
 
@@ -88,24 +89,22 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir(locale)}
-      className={locale === "ar" ? ibmPlexArabic.className : poppins.className}
+      className={`${poppins.variable} ${ibmPlexArabic.variable}`}
       suppressHydrationWarning
     >
       <body 
-        className="flex min-h-screen min-w-full flex-col scroll-smooth antialiased"
+        className={`${
+          isRTL ? "font-ibm-plex-arabic" : "font-poppins"
+        } flex min-h-screen min-w-full flex-col scroll-smooth antialiased bg-gray-50`}
         suppressHydrationWarning
       >
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          <div
-            className={`${poppins.variable} ${ibmPlexArabic.variable} ${
-              isRTL ? "font-ibm-plex-arabic" : "font-poppins"
-            } min-h-screen flex flex-col bg-gray-50`}
-          >
+        <QueryProvider>
+          <NextIntlClientProvider messages={messages} locale={locale}>
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
-          </div>
-        </NextIntlClientProvider>
+          </NextIntlClientProvider>
+        </QueryProvider>
       </body>
     </html>
   );

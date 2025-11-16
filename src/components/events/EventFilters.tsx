@@ -4,22 +4,19 @@ import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/routing";
 import { useSearchParams } from "next/navigation";
 import { useState, useTransition } from "react";
+import { useQuery } from "@tanstack/react-query";
 import Input from "@/components/ui/Input";
-import Select from "@/components/ui/Select";
+import Dropdown from "@/components/ui/Dropdown";
 import Button from "@/components/ui/Button";
+import { fetchCategories, fetchCountries } from "@/lib/api/client";
 
-interface EventFiltersProps {
-  categories: string[];
-}
-
-export default function EventFilters({ categories }: EventFiltersProps) {
+export default function EventFilters() {
   const t = useTranslations("filters");
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
 
-  // Local state for form inputs
   const [filters, setFilters] = useState({
     search: searchParams.get("search") || "",
     category: searchParams.get("category") || "all",
@@ -27,19 +24,20 @@ export default function EventFilters({ categories }: EventFiltersProps) {
     priceRange: searchParams.get("priceRange") || "all",
   });
 
-  // List of available countries
-  const countries = [
-    "egypt",
-    "saudi",
-    "uae",
-    "qatar",
-    "kuwait",
-    "bahrain",
-    "jordan",
-    "lebanon",
-    "morocco",
-    "tunisia",
-  ];
+  const [shouldFetchCategories, setShouldFetchCategories] = useState(false);
+  const [shouldFetchCountries, setShouldFetchCountries] = useState(false);
+
+  const { data: categories = [], isLoading: isCategoriesLoading } = useQuery({
+    queryKey: ["categories"],
+    queryFn: fetchCategories,
+    enabled: shouldFetchCategories,
+  });
+
+  const { data: countries = [], isLoading: isCountriesLoading } = useQuery({
+    queryKey: ["countries"],
+    queryFn: fetchCountries,
+    enabled: shouldFetchCountries,
+  });
 
   const handleFilterChange = (key: string, value: string) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
@@ -79,7 +77,6 @@ export default function EventFilters({ categories }: EventFiltersProps) {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
-        {/* Search */}
         <div className="lg:col-span-4">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -108,54 +105,58 @@ export default function EventFilters({ categories }: EventFiltersProps) {
           </div>
         </div>
 
-        {/* Category */}
         <div>
-          <Select
+          <Dropdown
             value={filters.category}
-            onChange={(e) => handleFilterChange("category", e.target.value)}
-          >
-            <option value="all">{t("selectCategory")}</option>
-            {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
-            ))}
-          </Select>
+            onChange={(value) => handleFilterChange("category", value)}
+            options={[
+              { value: "all", label: t("selectCategory") },
+              ...categories.map((category) => ({
+                value: category,
+                label: category,
+              })),
+            ]}
+            placeholder={t("selectCategory")}
+            isLoading={isCategoriesLoading}
+            onOpen={() => setShouldFetchCategories(true)}
+          />
         </div>
 
-        {/* Country */}
         <div>
-          <Select
+          <Dropdown
             value={filters.country}
-            onChange={(e) => handleFilterChange("country", e.target.value)}
-          >
-            <option value="all">{t("selectCountry")}</option>
-            {countries.map((country) => (
-              <option key={country} value={country}>
-                {t(`countries.${country}`)}
-              </option>
-            ))}
-          </Select>
+            onChange={(value) => handleFilterChange("country", value)}
+            options={[
+              { value: "all", label: t("selectCountry") },
+              ...countries.map((country) => ({
+                value: country.key,
+                label: country.name,
+              })),
+            ]}
+            placeholder={t("selectCountry")}
+            isLoading={isCountriesLoading}
+            onOpen={() => setShouldFetchCountries(true)}
+          />
         </div>
 
-        {/* Price Range */}
         <div>
-          <Select
+          <Dropdown
             value={filters.priceRange}
-            onChange={(e) => handleFilterChange("priceRange", e.target.value)}
-          >
-            <option value="all">{t("allPriceRanges")}</option>
-            <option value="free">{t("freeEvents")}</option>
-            <option value="paid">{t("paidEvents")}</option>
-          </Select>
+            onChange={(value) => handleFilterChange("priceRange", value)}
+            options={[
+              { value: "all", label: t("allPriceRanges") },
+              { value: "free", label: t("freeEvents") },
+              { value: "paid", label: t("paidEvents") },
+            ]}
+            placeholder={t("allPriceRanges")}
+          />
         </div>
 
-        {/* Action Buttons - Spanning last column */}
-        <div className="flex items-end gap-2">
+        <div className="flex gap-2">
           <Button
             onClick={applyFilters}
             disabled={isPending}
-            className="flex-1"
+            className="flex-1 h-[42px]"
           >
             {isPending
               ? t("applyFilters").replace("Apply", "Applying") + "..."
@@ -166,6 +167,7 @@ export default function EventFilters({ categories }: EventFiltersProps) {
               variant="outline"
               onClick={clearFilters}
               disabled={isPending}
+              className="h-[42px]"
             >
               {t("clearFilters")}
             </Button>

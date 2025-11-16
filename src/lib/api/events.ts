@@ -178,3 +178,41 @@ export async function getLocations(locale: Locale = "en"): Promise<string[]> {
   ];
   return cities.sort();
 }
+
+/**
+ * Gets all unique countries from events
+ * @param locale - The locale for localized content (defaults to 'en')
+ * @returns Sorted array of country objects with key and localized name
+ */
+export async function getCountries(
+  locale: Locale = "en"
+): Promise<Array<{ key: string; name: string }>> {
+  await delay(200);
+
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  const uniqueCountries = [
+    ...new Set(localizedEvents.map((e) => e.location.country[locale])),
+  ];
+
+  // Map country names to their keys
+  const countryMap: Record<string, string> = {
+    egypt: locale === "en" ? "Egypt" : "مصر",
+    saudi: locale === "en" ? "Saudi Arabia" : "المملكة العربية السعودية",
+    uae: locale === "en" ? "United Arab Emirates" : "الإمارات العربية المتحدة",
+    qatar: locale === "en" ? "Qatar" : "قطر",
+    kuwait: locale === "en" ? "Kuwait" : "الكويت",
+    bahrain: locale === "en" ? "Bahrain" : "البحرين",
+    jordan: locale === "en" ? "Jordan" : "الأردن",
+    lebanon: locale === "en" ? "Lebanon" : "لبنان",
+    morocco: locale === "en" ? "Morocco" : "المغرب",
+    tunisia: locale === "en" ? "Tunisia" : "تونس",
+  };
+
+  // Find matching keys for the countries in the events
+  const countries = Object.entries(countryMap)
+    .filter(([_, name]) => uniqueCountries.includes(name))
+    .map(([key, name]) => ({ key, name }))
+    .sort((a, b) => a.name.localeCompare(b.name, locale));
+
+  return countries;
+}

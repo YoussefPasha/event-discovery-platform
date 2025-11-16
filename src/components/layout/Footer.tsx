@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-export default function Footer() {
-  const t = useTranslations("footer");
+export default async function Footer() {
+  const t = await getTranslations("footer");
 
   return (
     <footer className="bg-gray-900 text-gray-300 mt-auto">
@@ -23,9 +23,7 @@ export default function Footer() {
                 {t("brandName")}
               </span>
             </div>
-            <p className="text-sm text-gray-400">
-              {t("brandDescription")}
-            </p>
+            <p className="text-sm text-gray-400">{t("brandDescription")}</p>
           </div>
 
           {/* Quick Links */}
