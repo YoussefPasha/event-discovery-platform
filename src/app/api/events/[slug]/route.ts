@@ -5,12 +5,13 @@ import { getLocale } from "next-intl/server";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     const locale = await getLocale();
+    const { slug } = await params;
 
-    const event = await getEventBySlug(params.slug, locale as Locale);
+    const event = await getEventBySlug(slug, locale as Locale);
 
     if (!event) {
       return NextResponse.json(
