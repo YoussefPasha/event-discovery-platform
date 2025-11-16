@@ -1,47 +1,28 @@
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import QueryProvider from "@/components/providers/QueryProvider";
+import { routing } from "@/i18n/routing";
+import { dir } from "@/lib/utils/dir";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import QueryProvider from "@/components/providers/QueryProvider";
 import "../globals.css";
-import { dir } from "@/lib/utils/dir";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
+  preload: true,
 });
 
 const ibmPlexArabic = localFont({
   src: [
     {
-      path: "../../../public/fonts/IBMPlexSansArabic-Thin.otf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/IBMPlexSansArabic-ExtraLight.otf",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/IBMPlexSansArabic-Light.otf",
-      weight: "300",
-      style: "normal",
-    },
-    {
       path: "../../../public/fonts/IBMPlexSansArabic-Regular.otf",
       weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/IBMPlexSansArabic-Text.otf",
-      weight: "450",
       style: "normal",
     },
     {
@@ -62,6 +43,7 @@ const ibmPlexArabic = localFont({
   ],
   variable: "--font-ibm-plex-arabic",
   display: "swap",
+  preload: true,
 });
 
 export function generateStaticParams() {
@@ -92,7 +74,11 @@ export default async function LocaleLayout({
       className={`${poppins.variable} ${ibmPlexArabic.variable}`}
       suppressHydrationWarning
     >
-      <body 
+      <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://ui-avatars.com" />
+      </head>
+      <body
         className={`${
           isRTL ? "font-ibm-plex-arabic" : "font-poppins"
         } flex min-h-screen min-w-full flex-col scroll-smooth antialiased bg-gray-50`}
