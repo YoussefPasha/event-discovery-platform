@@ -71,7 +71,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir(locale)}
-      className={`${poppins.variable} ${ibmPlexArabic.variable}`}
+      className={isRTL ? ibmPlexArabic.className : poppins.className}
       suppressHydrationWarning
     >
       <head>

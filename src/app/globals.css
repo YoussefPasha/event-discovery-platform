@@ -4,8 +4,6 @@
 :root {
   --background: #fafafa;
   --foreground: #171717;
-  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-ibm-plex-arabic: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 @theme inline {
@@ -18,11 +16,11 @@
 
 /* Font family utilities */
 .font-poppins {
-  font-family: var(--font-poppins);
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .font-ibm-plex-arabic {
-  font-family: var(--font-ibm-plex-arabic);
+  font-family: var(--font-ibm-plex-arabic), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* Smooth scrolling */
