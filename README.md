@@ -167,33 +167,12 @@ npm run build
 npm run start
 ```
 
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import project in Vercel
-3. Configure environment variables
-4. Deploy!
-
-The platform is optimized for Vercel with automatic:
-- Edge Functions
-- Image Optimization
-- Incremental Static Regeneration
-
 ## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## Contributing
-
-This is an assessment project. For production use, consider:
-- Adding real authentication
-- Implementing a proper backend/database
-- Adding payment integration
-- Setting up monitoring and analytics
-- Implementing email notifications
 
 ## License
 
