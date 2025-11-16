@@ -104,7 +104,7 @@ export default function BookTicketPage() {
               placeholder={t('mobilePlaceholder')}
               error={errors.mobile?.message}
               disabled={isSubmitting}
-              helperText="Include country code (e.g., +971, +966, +20)"
+              helperText={t('mobileHelper')}
             />
             
             {/* Date */}
@@ -139,16 +139,17 @@ export default function BookTicketPage() {
         {/* Info Box */}
         <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
           <p className="text-sm text-blue-800">
-            <strong>Note:</strong> This is a demo booking form. In a production environment, 
-            you would receive a confirmation email with your ticket details.
+            <strong>{t('note')}</strong> {t('demoNote')}
           </p>
         </div>
       </div>
 
       {/* Success Modal */}
       <SuccessModal 
-        isOpen={showSuccess} 
-        message={t('successMessage')} 
+        isOpen={showSuccess}
+        title={t('success')}
+        message={t('successMessage')}
+        redirectingText={t('redirecting')}
       />
     </div>
   );

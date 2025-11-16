@@ -89,9 +89,13 @@ export default async function LocaleLayout({
       lang={locale}
       dir={dir(locale)}
       className={locale === "ar" ? ibmPlexArabic.className : poppins.className}
+      suppressHydrationWarning
     >
-      <body className="flex min-h-screen min-w-full flex-col scroll-smooth antialiased">
-        <NextIntlClientProvider messages={messages}>
+      <body 
+        className="flex min-h-screen min-w-full flex-col scroll-smooth antialiased"
+        suppressHydrationWarning
+      >
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <div
             className={`${poppins.variable} ${ibmPlexArabic.variable} ${
               isRTL ? "font-ibm-plex-arabic" : "font-poppins"

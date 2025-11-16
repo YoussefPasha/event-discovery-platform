@@ -4,5 +4,5 @@ import { getLocale } from "next-intl/server";
 export default async function HomePage() {
   const locale = await getLocale();
 
-  redirect({ href: `/${locale}/events`, locale: locale });
+  redirect({ href: `/events`, locale: locale });
 }

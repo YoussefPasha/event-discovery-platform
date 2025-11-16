@@ -2,39 +2,48 @@
 
 interface SuccessModalProps {
   isOpen: boolean;
+  title: string;
   message: string;
+  redirectingText: string;
 }
 
-export default function SuccessModal({ isOpen, message }: SuccessModalProps) {
+export default function SuccessModal({ isOpen, title, message, redirectingText }: SuccessModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg shadow-2xl max-w-md w-full p-8 text-center animate-fade-in">
-        {/* Success Icon */}
-        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg
-            className="w-10 h-10 text-green-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center animate-scale-up">
+        {/* Success Icon with Animation */}
+        <div className="relative w-20 h-20 mx-auto mb-6">
+          {/* Outer ring */}
+          <div className="absolute inset-0 bg-green-100 rounded-full animate-ping opacity-75"></div>
+          {/* Inner circle */}
+          <div className="relative w-20 h-20 bg-linear-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg">
+            <svg
+              className="w-12 h-12 text-white animate-check-mark"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={3}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </div>
         </div>
         
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">Success!</h2>
-        <p className="text-gray-600 mb-6">{message}</p>
+        <h2 className="text-3xl font-bold mb-3 bg-linear-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
+          {title}
+        </h2>
+        <p className="text-gray-600 text-lg mb-8 leading-relaxed">{message}</p>
         
         {/* Loading Indicator */}
-        <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
-          <div className="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div>
-          <span>Redirecting to your tickets...</span>
+        <div className="flex items-center justify-center gap-3 text-sm text-gray-500 bg-gray-50 rounded-lg px-4 py-3">
+          <div className="animate-spin rounded-full h-5 w-5 border-2 border-blue-600 border-t-transparent"></div>
+          <span className="font-medium">{redirectingText}</span>
         </div>
       </div>
     </div>

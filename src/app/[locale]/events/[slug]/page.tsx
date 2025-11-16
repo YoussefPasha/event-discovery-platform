@@ -2,12 +2,13 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { getEventBySlug, getEvents } from '@/lib/api/events';
+import { getEventBySlug } from '@/lib/api/events';
 import { generateEventJsonLd, generateMetaDescription } from '@/lib/utils/seo';
 import { formatDate, formatTime } from '@/lib/utils/date';
 import { Link } from '@/i18n/routing';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
+import type { LocalizedEvent } from '@/types/event';
 
 interface PageProps {
   params: Promise<{
@@ -18,11 +19,11 @@ interface PageProps {
 
 export async function generateStaticParams() {
   // Import the localized events directly to get all slugs
-  const { default: localizedEvents } = await import('@/data/mock-events.json');
+  const { default: localizedEvents } = await import('@/data/mock-events.json') as { default: LocalizedEvent[] };
   const slugs: { slug: string; locale: string }[] = [];
   
   // Generate params for both AR and EN slugs
-  localizedEvents.forEach((event: any) => {
+  localizedEvents.forEach((event) => {
     slugs.push({ slug: event.slug.en, locale: 'en' });
     slugs.push({ slug: event.slug.ar, locale: 'ar' });
   });
@@ -220,7 +221,7 @@ export default async function EventDetailPage({ params }: PageProps) {
           
           {/* CTA Button */}
           <div className="sticky bottom-4 bg-white border-t border-gray-200 pt-4 -mx-4 px-4">
-            <Link href={`/${locale}/events/${event.slug}/book`}>
+            <Link href={`/events/${event.slug}/book`}>
               <Button 
                 size="lg" 
                 className="w-full"
