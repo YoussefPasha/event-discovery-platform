@@ -58,19 +58,19 @@ export default function TicketTable({ tickets }: TicketTableProps) {
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left rtl:text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {t("ticketNumber")}
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left rtl:text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {t("eventName")}
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left rtl:text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {t("eventDate")}
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left rtl:text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {t("bookingDate")}
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left rtl:text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {t("status")}
               </th>
             </tr>
@@ -81,19 +81,19 @@ export default function TicketTable({ tickets }: TicketTableProps) {
                 key={ticket.id}
                 className="hover:bg-gray-50 transition-colors"
               >
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-mono font-medium text-gray-900">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-mono font-medium text-gray-900 text-left rtl:text-right">
                   {ticket.ticketNumber}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-left rtl:text-right">
                   {ticket.eventTitle}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 text-left rtl:text-right">
                   {formatDate(ticket.eventDate, "PP")}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 text-left rtl:text-right">
                   {formatDate(ticket.bookingDate, "PP")}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-6 py-4 whitespace-nowrap text-left rtl:text-right">
                   {getStatusBadge(ticket.status)}
                 </td>
               </tr>
@@ -106,7 +106,7 @@ export default function TicketTable({ tickets }: TicketTableProps) {
       <div className="md:hidden divide-y divide-gray-200">
         {tickets.map((ticket) => (
           <div key={ticket.id} className="p-4 space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between rtl:flex-row-reverse">
               <span className="text-xs font-medium text-gray-500">
                 {t("ticketNumber")}
               </span>
@@ -115,7 +115,7 @@ export default function TicketTable({ tickets }: TicketTableProps) {
               </span>
             </div>
 
-            <div>
+            <div className="text-left rtl:text-right">
               <span className="text-xs font-medium text-gray-500 block mb-1">
                 {t("eventName")}
               </span>
@@ -123,7 +123,7 @@ export default function TicketTable({ tickets }: TicketTableProps) {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              <div>
+              <div className="text-left rtl:text-right">
                 <span className="text-xs font-medium text-gray-500 block mb-1">
                   {t("eventDate")}
                 </span>
@@ -131,7 +131,7 @@ export default function TicketTable({ tickets }: TicketTableProps) {
                   {formatDate(ticket.eventDate, "PP")}
                 </span>
               </div>
-              <div>
+              <div className="text-left rtl:text-right">
                 <span className="text-xs font-medium text-gray-500 block mb-1">
                   {t("status")}
                 </span>
