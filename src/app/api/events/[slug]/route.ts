@@ -8,7 +8,11 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const locale = await getLocale();
+    const { searchParams } = request.nextUrl;
+    const localeParam = searchParams.get("locale");
+    
+    // Use locale from query param if provided, otherwise get from next-intl
+    const locale = localeParam || (await getLocale());
     const { slug } = await params;
 
     const event = await getEventBySlug(slug, locale as Locale);
