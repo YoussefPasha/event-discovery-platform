@@ -104,3 +104,34 @@ The architecture supports adding:
 - Payment processing (booking flow designed with payments in mind)
 - Advanced analytics (event tracking hooks throughout)
 - Progressive Web App features (service worker ready)
+
+# Build (SSG, SSR, ISR)
+
+Route (app)
+┌ ○ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/[...rest]
+├ ● /[locale]/contact
+│ ├ /en/contact
+│ └ /ar/contact
+├ ● /[locale]/events/[slug]
+│ ├ /en/events/tech-summit-dubai-2025
+│ ├ /en/events/قمة-التكنولوجيا-دبي-2025
+│ ├ /en/events/arabic-music-festival-riyadh
+│ └ [+117 more paths]
+├ ƒ /[locale]/events/[slug]/book
+├ ● /[locale]/privacy
+│ ├ /en/privacy
+│ └ /ar/privacy
+├ ● /[locale]/terms
+│ ├ /en/terms
+│ └ /ar/terms
+├ ƒ /[locale]/tickets
+├ ƒ /api/bookings
+├ ƒ /api/categories
+├ ƒ /api/countries
+├ ƒ /api/events
+├ ƒ /api/events/[slug]
+├ ƒ /api/events/slugs
+├ ○ /robots.txt
+└ ○ /sitemap.xml

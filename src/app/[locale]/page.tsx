@@ -7,6 +7,13 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Suspense } from "react";
 
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'ar' },
+  ];
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -61,10 +68,7 @@ async function getEvents(
         "Accept-Language": locale,
         "Content-Type": "application/json",
       },
-      next: {
-        revalidate: 60,
-        tags: ["events"],
-      },
+      cache: 'no-store', // Force dynamic for search/filter functionality
     });
 
     if (!response.ok) {

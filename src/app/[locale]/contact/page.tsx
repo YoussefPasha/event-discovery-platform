@@ -5,6 +5,16 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+// Force static generation
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'ar' },
+  ];
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });

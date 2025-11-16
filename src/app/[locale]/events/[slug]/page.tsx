@@ -9,7 +9,8 @@ import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import type { Event } from "@/types/event";
 import { getBaseUrl } from "@/lib/api/base-url";
-import { getAllEventSlugs } from "@/lib/api/events";
+import { getAllEventSlugs, getEventBySlug } from "@/lib/api/events";
+import type { Locale } from "@/constants/locales";
 
 interface PageProps {
   params: Promise<{
@@ -18,9 +19,26 @@ interface PageProps {
   }>;
 }
 
+// Force static generation even with middleware
+export const dynamic = 'force-static';
+
+// Tell Next.js to return 404 for any paths not returned by generateStaticParams
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   try {
-    return getAllEventSlugs();
+    const slugs = getAllEventSlugs();
+    const locales: Locale[] = ['en', 'ar'];
+    
+    // Generate all combinations of locale + slug
+    const params = locales.flatMap((locale) =>
+      slugs.map((item) => ({
+        locale,
+        slug: item.slug,
+      }))
+    );
+    
+    return params;
   } catch (error) {
     console.error("Error in generateStaticParams:", error);
     return [];
@@ -32,61 +50,61 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
 
+  let event: Event | null = null;
+
   try {
+    // Try fetching via HTTP first (works in production/dev)
     const baseUrl = getBaseUrl();
     const response = await fetch(
       `${baseUrl}/api/events/${encodeURIComponent(slug)}?locale=${locale}`,
       {
-        next: { revalidate: 300 },
+        cache: 'force-cache', // Enable full static caching
       }
     );
 
-    if (!response.ok) {
-      return {
-        title: "Event Not Found",
-      };
+    if (response.ok) {
+      const data = await response.json();
+      event = data.event as Event;
     }
-
-    const data = await response.json();
-    const event = data.event as Event;
-
-    if (!event) {
-      return {
-        title: "Event Not Found",
-      };
+  } catch {
+    try {
+      event = await getEventBySlug(slug, locale as Locale);
+    } catch (fallbackError) {
+      console.error("Error in fallback getEventBySlug:", fallbackError);
     }
+  }
 
-    const description = generateMetaDescription(event);
-
-    return {
-      title: `${event.title} | Event Discovery Platform`,
-      description,
-      openGraph: {
-        title: event.title,
-        description: event.description,
-        type: "website",
-        images: [
-          {
-            url: event.imageUrl,
-            width: 1200,
-            height: 630,
-            alt: event.title,
-          },
-        ],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: event.title,
-        description: event.description,
-        images: [event.imageUrl],
-      },
-    };
-  } catch (error) {
-    console.error("Error in generateMetadata:", error);
+  if (!event) {
     return {
       title: "Event Not Found",
     };
   }
+
+  const description = generateMetaDescription(event);
+
+  return {
+    title: `${event.title} | Event Discovery Platform`,
+    description,
+    openGraph: {
+      title: event.title,
+      description: event.description,
+      type: "website",
+      images: [
+        {
+          url: event.imageUrl,
+          width: 1200,
+          height: 630,
+          alt: event.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: event.title,
+      description: event.description,
+      images: [event.imageUrl],
+    },
+  };
 }
 
 export default async function EventDetailPage({ params }: PageProps) {
@@ -95,11 +113,12 @@ export default async function EventDetailPage({ params }: PageProps) {
   let event: Event | null = null;
 
   try {
+    // Try fetching via HTTP first (works in production/dev)
     const baseUrl = getBaseUrl();
     const response = await fetch(
       `${baseUrl}/api/events/${encodeURIComponent(slug)}?locale=${locale}`,
       {
-        next: { revalidate: 60 },
+        cache: 'force-cache', // Enable full static caching
       }
     );
 
@@ -107,8 +126,12 @@ export default async function EventDetailPage({ params }: PageProps) {
       const data = await response.json();
       event = data.event as Event;
     }
-  } catch (error) {
-    console.error("Error fetching event:", error);
+  } catch {
+    try {
+      event = await getEventBySlug(slug, locale as Locale);
+    } catch (fallbackError) {
+      console.error("Error in fallback getEventBySlug:", fallbackError);
+    }
   }
 
   if (!event) {

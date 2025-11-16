@@ -9,9 +9,10 @@ import { formatDate } from '@/lib/utils/date';
 
 interface EventCardProps {
   event: Event;
+  priority?: boolean;
 }
 
-export default function EventCard({ event }: EventCardProps) {
+export default function EventCard({ event, priority = false }: EventCardProps) {
   const t = useTranslations('events');
   
   const availableSpots = event.maxAttendees - event.attendeeCount;
@@ -27,6 +28,8 @@ export default function EventCard({ event }: EventCardProps) {
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={priority}
+            loading={priority ? undefined : "lazy"}
           />
           {event.featured && (
             <div className="absolute top-2 left-2">
