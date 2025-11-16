@@ -38,10 +38,10 @@ export default async function EventsPage({ params, searchParams }: PageProps) {
   const filters = await searchParams;
   const t = await getTranslations({ locale, namespace: 'events' });
   
-  // Fetch events and categories in parallel
+  // Fetch events and categories in parallel with locale
   const [events, categories] = await Promise.all([
-    getEvents(filters),
-    getCategories(),
+    getEvents(filters, locale as 'ar' | 'en'),
+    getCategories(locale as 'ar' | 'en'),
   ]);
 
   return (

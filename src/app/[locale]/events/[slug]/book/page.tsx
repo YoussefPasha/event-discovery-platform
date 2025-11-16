@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import { useRouter } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { bookingSchema, BookingSchema } from '@/lib/validations/booking';
@@ -14,6 +14,7 @@ import SuccessModal from '@/components/booking/SuccessModal';
 export default function BookTicketPage() {
   const params = useParams();
   const router = useRouter();
+  const locale = useLocale();
   const t = useTranslations('booking');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -37,7 +38,10 @@ export default function BookTicketPage() {
     try {
       const response = await fetch('/api/bookings', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'x-locale': locale,
+        },
         body: JSON.stringify(data),
       });
       

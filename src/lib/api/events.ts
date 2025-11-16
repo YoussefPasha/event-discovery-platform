@@ -1,107 +1,166 @@
-import { Event, EventFilters } from '@/types/event';
-import mockEvents from '@/data/mock-events.json';
+import { Event, EventFilters, LocalizedEvent } from "@/types/event";
+import { Locale } from "@/constants/locales";
+import mockEvents from "@/data/mock-events.json";
 
-// Simulate API delay for realistic behavior
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/**
+ * Localizes an event by flattening localized fields to a specific locale
+ * @param event - The localized event from JSON
+ * @param locale - The target locale ('ar' or 'en')
+ * @returns Flattened event with locale-specific strings
+ */
+function localizeEvent(event: LocalizedEvent, locale: Locale): Event {
+  console.log(event.title[locale]);
+  
+  return {
+    id: event.id,
+    slug: event.slug[locale],
+    title: event.title[locale],
+    description: event.description[locale],
+    longDescription: event.longDescription[locale],
+    date: event.date,
+    ...(event.endDate && { endDate: event.endDate }),
+    location: {
+      venue: event.location.venue[locale],
+      city: event.location.city[locale],
+      state: event.location.state[locale],
+      country: event.location.country[locale],
+    },
+    category: event.category[locale],
+    tags: event.tags[locale],
+    imageUrl: event.imageUrl,
+    price: event.price,
+    attendeeCount: event.attendeeCount,
+    maxAttendees: event.maxAttendees,
+    organizer: {
+      name: event.organizer.name[locale],
+      avatar: event.organizer.avatar,
+    },
+    featured: event.featured,
+    createdAt: event.createdAt,
+  };
+}
 
 /**
  * Fetches events with optional filtering
  * @param filters - Optional filters for search, category, location, date, and price
+ * @param locale - The locale for localized content (defaults to 'en')
  * @returns Filtered and sorted array of events
  */
-export async function getEvents(filters?: EventFilters): Promise<Event[]> {
-  await delay(300); // Simulate network latency
-  
-  let events = mockEvents as Event[];
-  
-  // Apply search filter
+export async function getEvents(
+  filters?: EventFilters,
+  locale: Locale = "en"
+): Promise<Event[]> {
+  await delay(300);
+
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  let events = localizedEvents.map((event) => localizeEvent(event, locale));
+
   if (filters?.search) {
     const search = filters.search.toLowerCase();
-    events = events.filter(event => 
-      event.title.toLowerCase().includes(search) ||
-      event.description.toLowerCase().includes(search) ||
-      event.tags.some(tag => tag.toLowerCase().includes(search)) ||
-      event.category.toLowerCase().includes(search)
+    events = events.filter(
+      (event) =>
+        event.title.toLowerCase().includes(search) ||
+        event.description.toLowerCase().includes(search) ||
+        event.tags.some((tag) => tag.toLowerCase().includes(search)) ||
+        event.category.toLowerCase().includes(search)
     );
   }
-  
-  // Apply category filter
-  if (filters?.category && filters.category !== 'all') {
-    events = events.filter(event => event.category === filters.category);
+
+  if (filters?.category && filters.category !== "all") {
+    events = events.filter((event) => event.category === filters.category);
   }
-  
-  // Apply location filter
+
   if (filters?.location) {
     const location = filters.location.toLowerCase();
-    events = events.filter(event => 
-      event.location.city.toLowerCase().includes(location) ||
-      event.location.country.toLowerCase().includes(location) ||
-      event.location.venue.toLowerCase().includes(location)
+    events = events.filter(
+      (event) =>
+        event.location.city.toLowerCase().includes(location) ||
+        event.location.country.toLowerCase().includes(location) ||
+        event.location.venue.toLowerCase().includes(location)
     );
   }
-  
-  // Apply start date filter
+
   if (filters?.startDate) {
-    events = events.filter(event => new Date(event.date) >= new Date(filters.startDate!));
+    events = events.filter(
+      (event) => new Date(event.date) >= new Date(filters.startDate!)
+    );
   }
-  
-  // Apply end date filter
+
   if (filters?.endDate) {
-    events = events.filter(event => new Date(event.date) <= new Date(filters.endDate!));
+    events = events.filter(
+      (event) => new Date(event.date) <= new Date(filters.endDate!)
+    );
   }
-  
-  // Apply price range filter
-  if (filters?.priceRange === 'free') {
-    events = events.filter(event => event.price === 'free');
-  } else if (filters?.priceRange === 'paid') {
-    events = events.filter(event => event.price !== 'free');
+
+  if (filters?.priceRange === "free") {
+    events = events.filter((event) => event.price === "free");
+  } else if (filters?.priceRange === "paid") {
+    events = events.filter((event) => event.price !== "free");
   }
-  
-  // Sort by date (upcoming events first)
-  events.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-  
+
+  events.sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+
   return events;
 }
 
-/**
- * Fetches a single event by its slug
- * @param slug - The event slug
- * @returns Event object or null if not found
- */
-export async function getEventBySlug(slug: string): Promise<Event | null> {
+export async function getEventBySlug(
+  slug: string,
+  locale: Locale = "en"
+): Promise<Event | null> {
   await delay(200);
-  
-  const event = (mockEvents as Event[]).find(e => e.slug === slug);
-  return event || null;
+
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  const event = localizedEvents.find(
+    (e) => e.slug.ar === slug || e.slug.en === slug
+  );
+
+  if (!event) return null;
+
+  return localizeEvent(event, locale);
 }
 
 /**
  * Fetches all featured events
+ * @param locale - The locale for localized content (defaults to 'en')
  * @returns Array of featured events
  */
-export async function getFeaturedEvents(): Promise<Event[]> {
+export async function getFeaturedEvents(
+  locale: Locale = "en"
+): Promise<Event[]> {
   await delay(200);
-  
-  return (mockEvents as Event[]).filter(e => e.featured);
+
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  return localizedEvents
+    .filter((e) => e.featured)
+    .map((event) => localizeEvent(event, locale));
 }
 
 /**
  * Gets all unique categories from events
- * @returns Sorted array of category names
+ * @param locale - The locale for localized content (defaults to 'en')
+ * @returns Sorted array of category names in the specified locale
  */
-export async function getCategories(): Promise<string[]> {
-  const events = mockEvents as Event[];
-  const categories = [...new Set(events.map(e => e.category))];
+export async function getCategories(locale: Locale = "en"): Promise<string[]> {
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  const categories = [
+    ...new Set(localizedEvents.map((e) => e.category[locale])),
+  ];
   return categories.sort();
 }
 
 /**
  * Gets all unique locations (cities) from events
- * @returns Sorted array of city names
+ * @param locale - The locale for localized content (defaults to 'en')
+ * @returns Sorted array of city names in the specified locale
  */
-export async function getLocations(): Promise<string[]> {
-  const events = mockEvents as Event[];
-  const cities = [...new Set(events.map(e => e.location.city))];
+export async function getLocations(locale: Locale = "en"): Promise<string[]> {
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  const cities = [
+    ...new Set(localizedEvents.map((e) => e.location.city[locale])),
+  ];
   return cities.sort();
 }
-

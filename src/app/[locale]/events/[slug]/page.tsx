@@ -17,15 +17,22 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const events = await getEvents();
-  return events.map((event) => ({
-    slug: event.slug,
-  }));
+  // Import the localized events directly to get all slugs
+  const { default: localizedEvents } = await import('@/data/mock-events.json');
+  const slugs: { slug: string; locale: string }[] = [];
+  
+  // Generate params for both AR and EN slugs
+  localizedEvents.forEach((event: any) => {
+    slugs.push({ slug: event.slug.en, locale: 'en' });
+    slugs.push({ slug: event.slug.ar, locale: 'ar' });
+  });
+  
+  return slugs;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const event = await getEventBySlug(slug);
+  const { slug, locale } = await params;
+  const event = await getEventBySlug(slug, locale as 'ar' | 'en');
   
   if (!event) {
     return {
@@ -62,7 +69,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function EventDetailPage({ params }: PageProps) {
   const { slug, locale } = await params;
-  const event = await getEventBySlug(slug);
+  const event = await getEventBySlug(slug, locale as 'ar' | 'en');
   
   if (!event) {
     notFound();

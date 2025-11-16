@@ -1,34 +1,27 @@
-'use client';
+"use client";
 
-import { Ticket } from '@/types/booking';
-import { formatDate } from '@/lib/utils/date';
-import Badge from '@/components/ui/Badge';
-import Button from '@/components/ui/Button';
-import { useTranslations } from 'next-intl';
+import Badge from "@/components/ui/Badge";
+import { formatDate } from "@/lib/utils/date";
+import { Ticket } from "@/types/booking";
+import { useTranslations } from "next-intl";
 
 interface TicketTableProps {
   tickets: Ticket[];
 }
 
 export default function TicketTable({ tickets }: TicketTableProps) {
-  const t = useTranslations('tickets');
+  const t = useTranslations("tickets");
 
   const getStatusBadge = (status: string) => {
     switch (status) {
-      case 'confirmed':
-        return <Badge variant="success">{t('statusConfirmed')}</Badge>;
-      case 'pending':
-        return <Badge variant="warning">{t('statusPending')}</Badge>;
-      case 'cancelled':
-        return <Badge variant="danger">{t('statusCancelled')}</Badge>;
+      case "confirmed":
+        return <Badge variant="success">{t("statusConfirmed")}</Badge>;
+      case "pending":
+        return <Badge variant="warning">{t("statusPending")}</Badge>;
+      case "cancelled":
+        return <Badge variant="danger">{t("statusCancelled")}</Badge>;
       default:
         return <Badge>{status}</Badge>;
-    }
-  };
-
-  const handlePrint = () => {
-    if (typeof window !== 'undefined') {
-      window.print();
     }
   };
 
@@ -49,7 +42,7 @@ export default function TicketTable({ tickets }: TicketTableProps) {
           />
         </svg>
         <h3 className="text-xl font-semibold text-gray-900 mb-2">
-          {t('noTickets')}
+          {t("noTickets")}
         </h3>
         <p className="text-gray-600">
           You haven&apos;t booked any tickets yet. Browse events to get started!
@@ -66,28 +59,28 @@ export default function TicketTable({ tickets }: TicketTableProps) {
           <thead className="bg-gray-50">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                {t('ticketNumber')}
+                {t("ticketNumber")}
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                {t('eventName')}
+                {t("eventName")}
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                {t('eventDate')}
+                {t("eventDate")}
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                {t('bookingDate')}
+                {t("bookingDate")}
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                {t('status')}
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                {t('actions')}
+                {t("status")}
               </th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
             {tickets.map((ticket) => (
-              <tr key={ticket.id} className="hover:bg-gray-50 transition-colors">
+              <tr
+                key={ticket.id}
+                className="hover:bg-gray-50 transition-colors"
+              >
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-mono font-medium text-gray-900">
                   {ticket.ticketNumber}
                 </td>
@@ -95,21 +88,13 @@ export default function TicketTable({ tickets }: TicketTableProps) {
                   {ticket.eventTitle}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                  {formatDate(ticket.eventDate, 'PP')}
+                  {formatDate(ticket.eventDate, "PP")}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                  {formatDate(ticket.bookingDate, 'PP')}
+                  {formatDate(ticket.bookingDate, "PP")}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   {getStatusBadge(ticket.status)}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm">
-                  <button
-                    onClick={handlePrint}
-                    className="text-blue-600 hover:text-blue-900 font-medium transition-colors"
-                  >
-                    {t('print')}
-                  </button>
                 </td>
               </tr>
             ))}
@@ -123,49 +108,39 @@ export default function TicketTable({ tickets }: TicketTableProps) {
           <div key={ticket.id} className="p-4 space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-xs font-medium text-gray-500">
-                {t('ticketNumber')}
+                {t("ticketNumber")}
               </span>
               <span className="text-sm font-mono font-medium text-gray-900">
                 {ticket.ticketNumber}
               </span>
             </div>
-            
+
             <div>
               <span className="text-xs font-medium text-gray-500 block mb-1">
-                {t('eventName')}
+                {t("eventName")}
               </span>
               <span className="text-sm text-gray-900">{ticket.eventTitle}</span>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <span className="text-xs font-medium text-gray-500 block mb-1">
-                  {t('eventDate')}
+                  {t("eventDate")}
                 </span>
                 <span className="text-sm text-gray-700">
-                  {formatDate(ticket.eventDate, 'PP')}
+                  {formatDate(ticket.eventDate, "PP")}
                 </span>
               </div>
               <div>
                 <span className="text-xs font-medium text-gray-500 block mb-1">
-                  {t('status')}
+                  {t("status")}
                 </span>
                 {getStatusBadge(ticket.status)}
               </div>
             </div>
-            
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handlePrint}
-              className="w-full"
-            >
-              {t('print')}
-            </Button>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
