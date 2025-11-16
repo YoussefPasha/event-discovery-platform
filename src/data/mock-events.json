@@ -66,7 +66,7 @@
         "ar": "فعاليات التقنية الشرق الأوسط",
         "en": "Tech Events MENA"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=TEM"
+      "avatar": "https://ui-avatars.com/api/?name=Tech+Events+MENA&background=6366f1&color=fff&size=128"
     },
     "featured": true,
     "createdAt": "2025-10-01T10:00:00Z"
@@ -137,7 +137,7 @@
         "ar": "الفعاليات الثقافية السعودية",
         "en": "Cultural Events KSA"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=CEK"
+      "avatar": "https://ui-avatars.com/api/?name=Cultural+Events+KSA&background=ec4899&color=fff&size=128"
     },
     "featured": true,
     "createdAt": "2025-10-10T10:00:00Z"
@@ -208,7 +208,7 @@
         "ar": "مركز مصر للشركات الناشئة",
         "en": "Egypt Startup Hub"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=ESH"
+      "avatar": "https://ui-avatars.com/api/?name=Egypt+Startup+Hub&background=f59e0b&color=fff&size=128"
     },
     "featured": false,
     "createdAt": "2025-10-05T10:00:00Z"
@@ -280,7 +280,7 @@
         "ar": "متاحف قطر",
         "en": "Qatar Museums"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=QM"
+      "avatar": "https://ui-avatars.com/api/?name=Qatar+Museums&background=8b5cf6&color=fff&size=128"
     },
     "featured": false,
     "createdAt": "2025-09-15T10:00:00Z"
@@ -351,7 +351,7 @@
         "ar": "جمعية ماراثون بيروت",
         "en": "Beirut Marathon Association"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=BMA"
+      "avatar": "https://ui-avatars.com/api/?name=Beirut+Marathon+Association&background=10b981&color=fff&size=128"
     },
     "featured": true,
     "createdAt": "2025-08-01T10:00:00Z"
@@ -423,7 +423,7 @@
         "ar": "هيئة أبوظبي للسياحة",
         "en": "Abu Dhabi Tourism Authority"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=ADTA"
+      "avatar": "https://ui-avatars.com/api/?name=Abu+Dhabi+Tourism+Authority&background=ef4444&color=fff&size=128"
     },
     "featured": true,
     "createdAt": "2025-09-20T10:00:00Z"
@@ -495,7 +495,7 @@
         "ar": "أكاديمية التصوير الأردنية",
         "en": "Jordan Photography Academy"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=JPA"
+      "avatar": "https://ui-avatars.com/api/?name=Jordan+Photography+Academy&background=06b6d4&color=fff&size=128"
     },
     "featured": false,
     "createdAt": "2025-10-15T10:00:00Z"
@@ -567,7 +567,7 @@
         "ar": "اتحاد الرياضات الإلكترونية الكويتي",
         "en": "Kuwait Esports Federation"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=KEF"
+      "avatar": "https://ui-avatars.com/api/?name=Kuwait+Esports+Federation&background=a855f7&color=fff&size=128"
     },
     "featured": true,
     "createdAt": "2025-10-25T10:00:00Z"
@@ -639,7 +639,7 @@
         "ar": "مجلس الموضة المغربي",
         "en": "Moroccan Fashion Council"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=MFC"
+      "avatar": "https://ui-avatars.com/api/?name=Moroccan+Fashion+Council&background=14b8a6&color=fff&size=128"
     },
     "featured": false,
     "createdAt": "2025-09-10T10:00:00Z"
@@ -710,9 +710,1447 @@
         "ar": "لاف نيشن الشرق الأوسط",
         "en": "Laugh Nation Middle East"
       },
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=LNME"
+      "avatar": "https://ui-avatars.com/api/?name=Laugh+Nation+Middle+East&background=f97316&color=fff&size=128"
     },
     "featured": false,
     "createdAt": "2025-10-20T10:00:00Z"
+  },
+  {
+    "id": "11",
+    "slug": {
+      "ar": "هاكاثون-الذكاء-الاصطناعي-جدة",
+      "en": "ai-hackathon-jeddah"
+    },
+    "title": {
+      "ar": "هاكاثون الذكاء الاصطناعي جدة",
+      "en": "Jeddah AI Hackathon"
+    },
+    "description": {
+      "ar": "تحدي برمجة مكثف لمدة 48 ساعة يركز على حلول الذكاء الاصطناعي للتحديات الإقليمية.",
+      "en": "48-hour intensive coding challenge focused on AI solutions for regional challenges."
+    },
+    "longDescription": {
+      "ar": "انضم إلى أكبر هاكاثون للذكاء الاصطناعي في المملكة العربية السعودية. اعمل مع فرق من مطورين ومصممين وخبراء أعمال لبناء حلول ذكاء اصطناعي مبتكرة. التحديات تشمل الرعاية الصحية والتعليم والاستدامة والتجارة الإلكترونية. تتوفر أجهزة حوسبة GPU وموجهون خبراء وجوائز بقيمة 50,000 دولار. يتم توفير الوجبات والمشروبات ومنطقة للراحة.",
+      "en": "Join the biggest AI hackathon in Saudi Arabia. Work with teams of developers, designers, and business experts to build innovative AI solutions. Challenges include healthcare, education, sustainability, and e-commerce. GPU computing resources, expert mentors, and $50,000 in prizes available. Meals, beverages, and rest area provided."
+    },
+    "date": "2025-12-08T09:00:00Z",
+    "endDate": "2025-12-10T17:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز الملك عبدالله للدراسات والبحوث البترولية",
+        "en": "King Abdullah Petroleum Studies and Research Center"
+      },
+      "city": {
+        "ar": "جدة",
+        "en": "Jeddah"
+      },
+      "state": {
+        "ar": "مكة المكرمة",
+        "en": "Makkah"
+      },
+      "country": {
+        "ar": "السعودية",
+        "en": "Saudi Arabia"
+      }
+    },
+    "category": {
+      "ar": "تكنولوجيا",
+      "en": "Technology"
+    },
+    "tags": {
+      "ar": [
+        "هاكاثون",
+        "ذكاء اصطناعي",
+        "برمجة",
+        "ابتكار",
+        "مسابقة"
+      ],
+      "en": [
+        "hackathon",
+        "AI",
+        "coding",
+        "innovation",
+        "competition"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 156,
+    "maxAttendees": 200,
+    "organizer": {
+      "name": {
+        "ar": "تك السعودية",
+        "en": "Tech Saudi"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Tech+Saudi&background=3b82f6&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-10-12T10:00:00Z"
+  },
+  {
+    "id": "12",
+    "slug": {
+      "ar": "معرض-السيارات-الكلاسيكية-الشارقة",
+      "en": "classic-car-show-sharjah"
+    },
+    "title": {
+      "ar": "معرض السيارات الكلاسيكية",
+      "en": "Classic Car Show"
+    },
+    "description": {
+      "ar": "احتفال بالسيارات القديمة والكلاسيكية من جميع أنحاء العالم.",
+      "en": "A celebration of vintage and classic cars from around the world."
+    },
+    "longDescription": {
+      "ar": "يعرض هذا المعرض السنوي للسيارات الكلاسيكية أكثر من 200 سيارة نادرة من الخمسينيات إلى الثمانينيات. استمتع بعروض السيارات الحية ومزادات السيارات الكلاسيكية وورش عمل الترميم ولقاءات مع جامعي السيارات الشهيرين. تشمل الفعالية منطقة مخصصة للأطفال مع ألعاب وأنشطة. مثالية لعشاق السيارات والعائلات.",
+      "en": "This annual classic car exhibition showcases over 200 rare vehicles from the 1950s to 1980s. Enjoy live car displays, classic car auctions, restoration workshops, and meet-and-greets with renowned collectors. The event includes a dedicated kids zone with games and activities. Perfect for car enthusiasts and families."
+    },
+    "date": "2025-11-22T10:00:00Z",
+    "endDate": "2025-11-24T20:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز إكسبو الشارقة",
+        "en": "Expo Centre Sharjah"
+      },
+      "city": {
+        "ar": "الشارقة",
+        "en": "Sharjah"
+      },
+      "state": {
+        "ar": "الشارقة",
+        "en": "Sharjah"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "UAE"
+      }
+    },
+    "category": {
+      "ar": "سيارات",
+      "en": "Automotive"
+    },
+    "tags": {
+      "ar": [
+        "سيارات",
+        "كلاسيكي",
+        "معرض",
+        "عائلي",
+        "ترفيه"
+      ],
+      "en": [
+        "cars",
+        "classic",
+        "exhibition",
+        "family-friendly",
+        "entertainment"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=630",
+    "price": 40,
+    "attendeeCount": 2300,
+    "maxAttendees": 5000,
+    "organizer": {
+      "name": {
+        "ar": "نادي السيارات الكلاسيكية الإماراتي",
+        "en": "UAE Classic Car Club"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=UAE+Classic+Car+Club&background=84cc16&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-09-25T10:00:00Z"
+  },
+  {
+    "id": "13",
+    "slug": {
+      "ar": "مؤتمر-العملات-الرقمية-البحرين",
+      "en": "crypto-summit-bahrain"
+    },
+    "title": {
+      "ar": "مؤتمر العملات الرقمية والبلوكشين",
+      "en": "Crypto & Blockchain Summit"
+    },
+    "description": {
+      "ar": "استكشف مستقبل التمويل مع قادة صناعة العملات الرقمية والبلوكشين.",
+      "en": "Explore the future of finance with crypto and blockchain industry leaders."
+    },
+    "longDescription": {
+      "ar": "يجمع مؤتمر العملات الرقمية والبلوكشين في البحرين المستثمرين والمطورين والمنظمين والمتحمسين لمناقشة مستقبل التمويل اللامركزي. تشمل المواضيع DeFi و NFTs والتنظيم والأمن السيبراني وتقنية البلوكشين في المؤسسات. يضم المتحدثين الرئيسيين من الشركات الرائدة العالمية وورش عمل عملية ومنطقة للعارضين.",
+      "en": "The Bahrain Crypto & Blockchain Summit brings together investors, developers, regulators, and enthusiasts to discuss the future of decentralized finance. Topics include DeFi, NFTs, regulation, cybersecurity, and enterprise blockchain. Features keynote speakers from leading global firms, hands-on workshops, and exhibitor area."
+    },
+    "date": "2025-12-03T09:00:00Z",
+    "endDate": "2025-12-04T18:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز البحرين الدولي للمعارض والمؤتمرات",
+        "en": "Bahrain International Exhibition & Convention Centre"
+      },
+      "city": {
+        "ar": "المنامة",
+        "en": "Manama"
+      },
+      "state": {
+        "ar": "العاصمة",
+        "en": "Capital"
+      },
+      "country": {
+        "ar": "البحرين",
+        "en": "Bahrain"
+      }
+    },
+    "category": {
+      "ar": "تكنولوجيا",
+      "en": "Technology"
+    },
+    "tags": {
+      "ar": [
+        "عملات رقمية",
+        "بلوكشين",
+        "تمويل",
+        "تكنولوجيا",
+        "استثمار"
+      ],
+      "en": [
+        "crypto",
+        "blockchain",
+        "finance",
+        "technology",
+        "investment"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630",
+    "price": 250,
+    "attendeeCount": 420,
+    "maxAttendees": 600,
+    "organizer": {
+      "name": {
+        "ar": "منظمة البلوكشين الخليجية",
+        "en": "Gulf Blockchain Organization"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Gulf+Blockchain+Organization&background=eab308&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-10-08T10:00:00Z"
+  },
+  {
+    "id": "14",
+    "slug": {
+      "ar": "مهرجان-الضوء-مراكش",
+      "en": "light-festival-marrakech"
+    },
+    "title": {
+      "ar": "مهرجان الضوء مراكش",
+      "en": "Marrakech Light Festival"
+    },
+    "description": {
+      "ar": "تجربة بصرية ساحرة مع عروض ضوئية وتركيبات فنية في المدينة القديمة.",
+      "en": "A magical visual experience with light shows and art installations in the old city."
+    },
+    "longDescription": {
+      "ar": "يحول مهرجان الضوء في مراكش المدينة القديمة إلى معرض فني مذهل مع عروض ضوئية وتركيبات تفاعلية وعروض ليزر. يعرض الفنانون المحليون والدوليون أعمالهم على جدران الأزقة والساحات والنوافير. جولات إرشادية مسائية متاحة. حدث مجاني مناسب للعائلات يحتفل بتراث مراكش الغني.",
+      "en": "The Marrakech Light Festival transforms the old city into a stunning art gallery with light shows, interactive installations, and laser displays. Local and international artists showcase their work on alley walls, squares, and fountains. Evening guided tours available. Free family-friendly event celebrating Marrakech's rich heritage."
+    },
+    "date": "2025-12-22T18:00:00Z",
+    "endDate": "2025-12-26T23:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "المدينة القديمة مراكش",
+        "en": "Marrakech Medina"
+      },
+      "city": {
+        "ar": "مراكش",
+        "en": "Marrakech"
+      },
+      "state": {
+        "ar": "مراكش-آسفي",
+        "en": "Marrakech-Safi"
+      },
+      "country": {
+        "ar": "المغرب",
+        "en": "Morocco"
+      }
+    },
+    "category": {
+      "ar": "فن",
+      "en": "Art"
+    },
+    "tags": {
+      "ar": [
+        "فن",
+        "ضوء",
+        "مهرجان",
+        "ثقافة",
+        "عائلي"
+      ],
+      "en": [
+        "art",
+        "light",
+        "festival",
+        "culture",
+        "family-friendly"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 8900,
+    "maxAttendees": 15000,
+    "organizer": {
+      "name": {
+        "ar": "مؤسسة مراكش للفنون",
+        "en": "Marrakech Arts Foundation"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Marrakech+Arts+Foundation&background=d946ef&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-09-30T10:00:00Z"
+  },
+  {
+    "id": "15",
+    "slug": {
+      "ar": "معرض-الكتاب-الاسكندرية",
+      "en": "book-fair-alexandria"
+    },
+    "title": {
+      "ar": "معرض الإسكندرية الدولي للكتاب",
+      "en": "Alexandria International Book Fair"
+    },
+    "description": {
+      "ar": "احتفال بالأدب والثقافة مع أكثر من 500 ناشر من جميع أنحاء العالم.",
+      "en": "A celebration of literature and culture with 500+ publishers from around the world."
+    },
+    "longDescription": {
+      "ar": "يعد معرض الإسكندرية الدولي للكتاب واحدًا من أكبر المعارض الأدبية في الشرق الأوسط. استكشف آلاف العناوين باللغات العربية والإنجليزية والفرنسية. حضور ندوات مع مؤلفين مشهورين وحفلات توقيع الكتب وورش عمل الكتابة الإبداعية. قسم خاص لكتب الأطفال مع أنشطة قصصية. خصومات تصل إلى 50٪ على الكتب المختارة.",
+      "en": "The Alexandria International Book Fair is one of the largest literary exhibitions in the Middle East. Explore thousands of titles in Arabic, English, and French. Attend seminars with renowned authors, book signing sessions, and creative writing workshops. Special children's book section with storytelling activities. Discounts up to 50% on selected books."
+    },
+    "date": "2025-11-20T10:00:00Z",
+    "endDate": "2025-12-05T21:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مكتبة الإسكندرية",
+        "en": "Bibliotheca Alexandrina"
+      },
+      "city": {
+        "ar": "الإسكندرية",
+        "en": "Alexandria"
+      },
+      "state": {
+        "ar": "الإسكندرية",
+        "en": "Alexandria"
+      },
+      "country": {
+        "ar": "مصر",
+        "en": "Egypt"
+      }
+    },
+    "category": {
+      "ar": "ثقافة",
+      "en": "Culture"
+    },
+    "tags": {
+      "ar": [
+        "كتب",
+        "أدب",
+        "ثقافة",
+        "معرض",
+        "عائلي"
+      ],
+      "en": [
+        "books",
+        "literature",
+        "culture",
+        "exhibition",
+        "family-friendly"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&h=630",
+    "price": 15,
+    "attendeeCount": 12500,
+    "maxAttendees": 20000,
+    "organizer": {
+      "name": {
+        "ar": "مكتبة الإسكندرية",
+        "en": "Bibliotheca Alexandrina"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Bibliotheca+Alexandrina&background=0ea5e9&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-09-05T10:00:00Z"
+  },
+  {
+    "id": "16",
+    "slug": {
+      "ar": "مسابقة-الطائرات-بدون-طيار-دبي",
+      "en": "drone-racing-championship-dubai"
+    },
+    "title": {
+      "ar": "بطولة سباق الطائرات بدون طيار",
+      "en": "Drone Racing Championship"
+    },
+    "description": {
+      "ar": "سباقات طائرات بدون طيار عالية السرعة مع أفضل الطيارين من حول العالم.",
+      "en": "High-speed drone racing with top pilots from around the world."
+    },
+    "longDescription": {
+      "ar": "شاهد أسرع طيارين للطائرات بدون طيار في العالم يتنافسون في سباقات عبر مسارات معقدة بسرعات تتجاوز 150 كم/ساعة. تشمل الفعالية سباقات محترفة وهواة ومسابقات تصوير بالطائرات بدون طيار وورش عمل للمبتدئين. منطقة تجريبية مجانية للزوار. جوائز بقيمة 75,000 دولار. البث المباشر على الشاشات العملاقة مع تعليق متخصص.",
+      "en": "Watch the world's fastest drone pilots compete in races through complex courses at speeds exceeding 150 km/h. Event includes professional and amateur races, drone photography competitions, and beginner workshops. Free trial zone for visitors. $75,000 prize pool. Live broadcast on giant screens with expert commentary."
+    },
+    "date": "2025-12-16T13:00:00Z",
+    "endDate": "2025-12-17T19:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "ملعب الحمرية",
+        "en": "Al Hamriyah Stadium"
+      },
+      "city": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "state": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "UAE"
+      }
+    },
+    "category": {
+      "ar": "تكنولوجيا",
+      "en": "Technology"
+    },
+    "tags": {
+      "ar": [
+        "طائرات بدون طيار",
+        "سباق",
+        "تكنولوجيا",
+        "رياضة",
+        "ترفيه"
+      ],
+      "en": [
+        "drone",
+        "racing",
+        "technology",
+        "sports",
+        "entertainment"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1200&h=630",
+    "price": 60,
+    "attendeeCount": 1850,
+    "maxAttendees": 3000,
+    "organizer": {
+      "name": {
+        "ar": "اتحاد الطائرات بدون طيار الإماراتي",
+        "en": "UAE Drone Federation"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=UAE+Drone+Federation&background=dc2626&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-10-18T10:00:00Z"
+  },
+  {
+    "id": "17",
+    "slug": {
+      "ar": "مهرجان-المسرح-الوطني-تونس",
+      "en": "national-theater-festival-tunis"
+    },
+    "title": {
+      "ar": "مهرجان المسرح الوطني",
+      "en": "National Theater Festival"
+    },
+    "description": {
+      "ar": "أسبوع من العروض المسرحية المميزة من فرق محلية ودولية.",
+      "en": "A week of outstanding theatrical performances from local and international troupes."
+    },
+    "longDescription": {
+      "ar": "يعرض مهرجان المسرح الوطني في تونس أفضل الإنتاجات المسرحية من تونس والعالم العربي وأوروبا. استمتع بالمسرحيات الكلاسيكية والمعاصرة والتجريبية. يتضمن عروض أداء يومية ونقاشات مع الفنانين وورش عمل للممثلين. تقدم العروض باللغات العربية والفرنسية والإنجليزية مع ترجمة متاحة. احتفال حقيقي بفن المسرح.",
+      "en": "The National Theater Festival in Tunis showcases the best theatrical productions from Tunisia, the Arab world, and Europe. Enjoy classical, contemporary, and experimental plays. Includes daily performances, artist discussions, and acting workshops. Shows presented in Arabic, French, and English with subtitles available. A true celebration of theatrical arts."
+    },
+    "date": "2025-12-07T19:00:00Z",
+    "endDate": "2025-12-13T23:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "المسرح البلدي بتونس",
+        "en": "Théâtre Municipal de Tunis"
+      },
+      "city": {
+        "ar": "تونس",
+        "en": "Tunis"
+      },
+      "state": {
+        "ar": "تونس",
+        "en": "Tunis"
+      },
+      "country": {
+        "ar": "تونس",
+        "en": "Tunisia"
+      }
+    },
+    "category": {
+      "ar": "ثقافة",
+      "en": "Culture"
+    },
+    "tags": {
+      "ar": [
+        "مسرح",
+        "فن",
+        "ثقافة",
+        "عروض",
+        "مهرجان"
+      ],
+      "en": [
+        "theater",
+        "art",
+        "culture",
+        "performance",
+        "festival"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1503095396549-807759245b35?w=1200&h=630",
+    "price": 35,
+    "attendeeCount": 980,
+    "maxAttendees": 1500,
+    "organizer": {
+      "name": {
+        "ar": "المسرح الوطني التونسي",
+        "en": "Tunisian National Theater"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Tunisian+National+Theater&background=059669&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-10-02T10:00:00Z"
+  },
+  {
+    "id": "18",
+    "slug": {
+      "ar": "مؤتمر-الطاقة-المتجددة-مسقط",
+      "en": "renewable-energy-conference-muscat"
+    },
+    "title": {
+      "ar": "مؤتمر الطاقة المتجددة",
+      "en": "Renewable Energy Conference"
+    },
+    "description": {
+      "ar": "استكشف مستقبل الطاقة المستدامة في منطقة الشرق الأوسط.",
+      "en": "Explore the future of sustainable energy in the Middle East region."
+    },
+    "longDescription": {
+      "ar": "يجمع مؤتمر الطاقة المتجددة في مسقط خبراء الطاقة والمهندسين وصانعي السياسات والمستثمرين لمناقشة حلول الطاقة المستدامة. تشمل المواضيع الطاقة الشمسية وطاقة الرياح والهيدروجين الأخضر وتخزين الطاقة. جلسات رئيسية من قادة الصناعة العالميين وعروض مشاريع إقليمية وورش عمل فنية. فرصة مثالية للتواصل واستكشاف شراكات جديدة.",
+      "en": "The Muscat Renewable Energy Conference brings together energy experts, engineers, policymakers, and investors to discuss sustainable energy solutions. Topics include solar power, wind energy, green hydrogen, and energy storage. Keynote sessions from global industry leaders, regional project showcases, and technical workshops. Perfect opportunity for networking and exploring new partnerships."
+    },
+    "date": "2025-11-26T09:00:00Z",
+    "endDate": "2025-11-27T17:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز عمان للمؤتمرات والمعارض",
+        "en": "Oman Convention & Exhibition Centre"
+      },
+      "city": {
+        "ar": "مسقط",
+        "en": "Muscat"
+      },
+      "state": {
+        "ar": "مسقط",
+        "en": "Muscat"
+      },
+      "country": {
+        "ar": "عمان",
+        "en": "Oman"
+      }
+    },
+    "category": {
+      "ar": "بيئة",
+      "en": "Environment"
+    },
+    "tags": {
+      "ar": [
+        "طاقة متجددة",
+        "استدامة",
+        "بيئة",
+        "مؤتمر",
+        "أعمال"
+      ],
+      "en": [
+        "renewable-energy",
+        "sustainability",
+        "environment",
+        "conference",
+        "business"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=630",
+    "price": 180,
+    "attendeeCount": 340,
+    "maxAttendees": 500,
+    "organizer": {
+      "name": {
+        "ar": "مجلس الطاقة العماني",
+        "en": "Oman Energy Council"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Oman+Energy+Council&background=16a34a&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-09-18T10:00:00Z"
+  },
+  {
+    "id": "19",
+    "slug": {
+      "ar": "مهرجان-الجاز-عمان",
+      "en": "jazz-festival-amman"
+    },
+    "title": {
+      "ar": "مهرجان عمان للجاز",
+      "en": "Amman Jazz Festival"
+    },
+    "description": {
+      "ar": "احتفال بموسيقى الجاز مع فنانين محليين ودوليين مشهورين.",
+      "en": "A celebration of jazz music with renowned local and international artists."
+    },
+    "longDescription": {
+      "ar": "يجلب مهرجان عمان للجاز أفضل موسيقيي الجاز من الأردن والمنطقة والعالم. استمتع بثلاثة أيام من العروض الحية في أجواء خارجية جميلة. يضم الجاز التقليدي والحديث واللاتيني والتجريبي. أكشاك الطعام والمشروبات متاحة. مقاعد VIP مع خدمة الطاولة. حدث صديق للعائلة مع دخول مجاني للأطفال دون 12 سنة.",
+      "en": "The Amman Jazz Festival brings the best jazz musicians from Jordan, the region, and the world. Enjoy three days of live performances in a beautiful outdoor setting. Features traditional, modern, Latin, and experimental jazz. Food and beverage stalls available. VIP seating with table service. Family-friendly event with free entry for children under 12."
+    },
+    "date": "2025-11-28T18:00:00Z",
+    "endDate": "2025-11-30T23:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "المدرج الروماني",
+        "en": "Roman Amphitheater"
+      },
+      "city": {
+        "ar": "عمان",
+        "en": "Amman"
+      },
+      "state": {
+        "ar": "عمان",
+        "en": "Amman"
+      },
+      "country": {
+        "ar": "الأردن",
+        "en": "Jordan"
+      }
+    },
+    "category": {
+      "ar": "موسيقى",
+      "en": "Music"
+    },
+    "tags": {
+      "ar": [
+        "جاز",
+        "موسيقى",
+        "مهرجان",
+        "خارجي",
+        "عائلي"
+      ],
+      "en": [
+        "jazz",
+        "music",
+        "festival",
+        "outdoor",
+        "family-friendly"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=1200&h=630",
+    "price": 45,
+    "attendeeCount": 1650,
+    "maxAttendees": 2500,
+    "organizer": {
+      "name": {
+        "ar": "جمعية الموسيقى الأردنية",
+        "en": "Jordan Music Society"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Jordan+Music+Society&background=7c3aed&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-09-22T10:00:00Z"
+  },
+  {
+    "id": "20",
+    "slug": {
+      "ar": "معرض-التكنولوجيا-الصحية-الرياض",
+      "en": "healthtech-expo-riyadh"
+    },
+    "title": {
+      "ar": "معرض التكنولوجيا الصحية",
+      "en": "HealthTech Expo"
+    },
+    "description": {
+      "ar": "اكتشف أحدث الابتكارات في التكنولوجيا الطبية والرعاية الصحية الرقمية.",
+      "en": "Discover the latest innovations in medical technology and digital healthcare."
+    },
+    "longDescription": {
+      "ar": "معرض التكنولوجيا الصحية في الرياض هو المنصة الرائدة لحلول الرعاية الصحية المبتكرة في المملكة. استكشف أحدث التقنيات في التطبيب عن بعد والذكاء الاصطناعي الطبي والأجهزة القابلة للارتداء والسجلات الصحية الإلكترونية. يضم أكثر من 200 عارض من الشركات المحلية والدولية. تشمل عروض توضيحية حية وندوات طبية وورش عمل للمحترفين الصحيين.",
+      "en": "The HealthTech Expo in Riyadh is the leading platform for innovative healthcare solutions in the Kingdom. Explore the latest in telemedicine, medical AI, wearable devices, and electronic health records. Features 200+ exhibitors from local and international companies. Includes live demonstrations, medical seminars, and workshops for healthcare professionals."
+    },
+    "date": "2025-12-09T10:00:00Z",
+    "endDate": "2025-12-11T19:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز الرياض للمعارض والمؤتمرات",
+        "en": "Riyadh Exhibition & Convention Center"
+      },
+      "city": {
+        "ar": "الرياض",
+        "en": "Riyadh"
+      },
+      "state": {
+        "ar": "الرياض",
+        "en": "Riyadh"
+      },
+      "country": {
+        "ar": "السعودية",
+        "en": "Saudi Arabia"
+      }
+    },
+    "category": {
+      "ar": "صحة",
+      "en": "Health"
+    },
+    "tags": {
+      "ar": [
+        "صحة",
+        "تكنولوجيا",
+        "طب",
+        "معرض",
+        "ابتكار"
+      ],
+      "en": [
+        "health",
+        "technology",
+        "medical",
+        "expo",
+        "innovation"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&h=630",
+    "price": 95,
+    "attendeeCount": 2850,
+    "maxAttendees": 4000,
+    "organizer": {
+      "name": {
+        "ar": "هيئة الصحة السعودية",
+        "en": "Saudi Health Authority"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Saudi+Health+Authority&background=be123c&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-10-14T10:00:00Z"
+  },
+  {
+    "id": "21",
+    "slug": {
+      "ar": "مؤتمر-الامن-السيبراني-دبي",
+      "en": "cybersecurity-summit-dubai"
+    },
+    "title": {
+      "ar": "قمة الأمن السيبراني",
+      "en": "Cybersecurity Summit"
+    },
+    "description": {
+      "ar": "تعلم من خبراء الأمن السيبراني حول حماية البيانات والأنظمة الرقمية.",
+      "en": "Learn from cybersecurity experts about protecting data and digital systems."
+    },
+    "longDescription": {
+      "ar": "قمة الأمن السيبراني في دبي تجمع محترفي الأمن السيبراني والمسؤولين التنفيذيين وخبراء التكنولوجيا لمناقشة التهديدات الحديثة وحلول الحماية. تشمل المواضيع الاختراقات الإلكترونية والأمن السحابي وحماية البيانات والامتثال. ورش عمل عملية حول اختبار الاختراق والاستجابة للحوادث. جلسات من قادة شركات الأمن العالمية ومنطقة للعارضين.",
+      "en": "The Dubai Cybersecurity Summit brings together cybersecurity professionals, executives, and tech experts to discuss modern threats and protection solutions. Topics include cyber attacks, cloud security, data protection, and compliance. Hands-on workshops on penetration testing and incident response. Sessions from global security company leaders and exhibitor area."
+    },
+    "date": "2025-12-02T09:00:00Z",
+    "endDate": "2025-12-03T17:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "فندق جميرا بيتش",
+        "en": "Jumeirah Beach Hotel"
+      },
+      "city": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "state": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "UAE"
+      }
+    },
+    "category": {
+      "ar": "تكنولوجيا",
+      "en": "Technology"
+    },
+    "tags": {
+      "ar": [
+        "أمن سيبراني",
+        "تكنولوجيا",
+        "أمن",
+        "مؤتمر",
+        "احترافي"
+      ],
+      "en": [
+        "cybersecurity",
+        "technology",
+        "security",
+        "conference",
+        "professional"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=630",
+    "price": 320,
+    "attendeeCount": 580,
+    "maxAttendees": 800,
+    "organizer": {
+      "name": {
+        "ar": "مركز دبي للأمن السيبراني",
+        "en": "Dubai Cybersecurity Center"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Dubai+Cybersecurity+Center&background=1e40af&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-10-06T10:00:00Z"
+  },
+  {
+    "id": "22",
+    "slug": {
+      "ar": "بطولة-الشطرنج-الدوحة",
+      "en": "chess-championship-doha"
+    },
+    "title": {
+      "ar": "بطولة الشطرنج الدولية",
+      "en": "International Chess Championship"
+    },
+    "description": {
+      "ar": "بطولة شطرنج دولية تضم أساتذة كبار ولاعبين من جميع أنحاء العالم.",
+      "en": "International chess tournament featuring grandmasters and players from around the world."
+    },
+    "longDescription": {
+      "ar": "تجذب بطولة الشطرنج الدولية في الدوحة أفضل لاعبي الشطرنج من أكثر من 60 دولة. يتنافس اللاعبون في مسابقات سريعة وخاطفة وكلاسيكية. جوائز بقيمة 100,000 دولار. يتضمن محاضرات من أساتذة كبار وجلسات تدريبية ومحاكاة للمباريات الشهيرة. مفتوح للمشاهدين مع تحليل حي للمباريات على شاشات كبيرة. قسم خاص لبطولات الأطفال والناشئين.",
+      "en": "The International Chess Championship in Doha attracts top chess players from over 60 countries. Players compete in rapid, blitz, and classical competitions. $100,000 prize pool. Includes lectures from grandmasters, training sessions, and simulation of famous games. Open to spectators with live game analysis on big screens. Special section for children's and youth tournaments."
+    },
+    "date": "2025-12-14T09:00:00Z",
+    "endDate": "2025-12-20T19:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "فندق شيراتون الدوحة",
+        "en": "Sheraton Doha Hotel"
+      },
+      "city": {
+        "ar": "الدوحة",
+        "en": "Doha"
+      },
+      "state": {
+        "ar": "الدوحة",
+        "en": "Doha"
+      },
+      "country": {
+        "ar": "قطر",
+        "en": "Qatar"
+      }
+    },
+    "category": {
+      "ar": "رياضة",
+      "en": "Sports"
+    },
+    "tags": {
+      "ar": [
+        "شطرنج",
+        "بطولة",
+        "رياضة ذهنية",
+        "دولي",
+        "احترافي"
+      ],
+      "en": [
+        "chess",
+        "championship",
+        "mind-sports",
+        "international",
+        "professional"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1200&h=630",
+    "price": 25,
+    "attendeeCount": 320,
+    "maxAttendees": 500,
+    "organizer": {
+      "name": {
+        "ar": "الاتحاد القطري للشطرنج",
+        "en": "Qatar Chess Federation"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Qatar+Chess+Federation&background=65a30d&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-10-16T10:00:00Z"
+  },
+  {
+    "id": "23",
+    "slug": {
+      "ar": "مهرجان-الافلام-الوثائقية-بيروت",
+      "en": "documentary-film-festival-beirut"
+    },
+    "title": {
+      "ar": "مهرجان الأفلام الوثائقية بيروت",
+      "en": "Beirut Documentary Film Festival"
+    },
+    "description": {
+      "ar": "عرض أفضل الأفلام الوثائقية من الشرق الأوسط والعالم.",
+      "en": "Showcasing the best documentary films from the Middle East and the world."
+    },
+    "longDescription": {
+      "ar": "يعرض مهرجان الأفلام الوثائقية في بيروت أكثر من 80 فيلمًا وثائقيًا من 40 دولة. تشمل القصص موضوعات اجتماعية وسياسية وبيئية وإنسانية. عروض يومية في عدة مواقع عبر المدينة، مع نقاشات بعد العرض مع المخرجين. ورش عمل لصناعة الأفلام الوثائقية ومسابقة للأفلام الطلابية. حدث مثالي لعشاق السينما والناشطين الاجتماعيين.",
+      "en": "The Beirut Documentary Film Festival showcases over 80 documentary films from 40 countries. Stories cover social, political, environmental, and humanitarian topics. Daily screenings at multiple venues across the city, with post-screening discussions with directors. Documentary filmmaking workshops and student film competition. Perfect event for cinema lovers and social activists."
+    },
+    "date": "2025-11-27T18:00:00Z",
+    "endDate": "2025-12-02T23:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "سينما متروبوليس",
+        "en": "Metropolis Cinema"
+      },
+      "city": {
+        "ar": "بيروت",
+        "en": "Beirut"
+      },
+      "state": {
+        "ar": "بيروت",
+        "en": "Beirut"
+      },
+      "country": {
+        "ar": "لبنان",
+        "en": "Lebanon"
+      }
+    },
+    "category": {
+      "ar": "سينما",
+      "en": "Cinema"
+    },
+    "tags": {
+      "ar": [
+        "أفلام",
+        "وثائقي",
+        "سينما",
+        "ثقافة",
+        "مهرجان"
+      ],
+      "en": [
+        "films",
+        "documentary",
+        "cinema",
+        "culture",
+        "festival"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&h=630",
+    "price": 20,
+    "attendeeCount": 1240,
+    "maxAttendees": 2000,
+    "organizer": {
+      "name": {
+        "ar": "جمعية السينما اللبنانية",
+        "en": "Lebanese Cinema Association"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Lebanese+Cinema+Association&background=ea580c&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-09-28T10:00:00Z"
+  },
+  {
+    "id": "24",
+    "slug": {
+      "ar": "معرض-التصميم-الداخلي-الكويت",
+      "en": "interior-design-expo-kuwait"
+    },
+    "title": {
+      "ar": "معرض التصميم الداخلي والديكور",
+      "en": "Interior Design & Decor Expo"
+    },
+    "description": {
+      "ar": "استكشف أحدث الاتجاهات في التصميم الداخلي والأثاث والديكور المنزلي.",
+      "en": "Explore the latest trends in interior design, furniture, and home decor."
+    },
+    "longDescription": {
+      "ar": "معرض التصميم الداخلي في الكويت هو الوجهة المثالية لأصحاب المنازل والمصممين والمهندسين المعماريين. يضم أكثر من 150 عارضًا يعرضون الأثاث الفاخر والإضاءة والمنسوجات والاكسسوارات المنزلية. ورش عمل يومية حول التصميم الداخلي واختيار الألوان والترتيب المنزلي. استشارات مجانية مع مصممين محترفين. عروض خاصة وخصومات حصرية للزوار.",
+      "en": "The Interior Design Expo in Kuwait is the perfect destination for homeowners, designers, and architects. Features 150+ exhibitors showcasing luxury furniture, lighting, textiles, and home accessories. Daily workshops on interior design, color selection, and home organization. Free consultations with professional designers. Special offers and exclusive discounts for visitors."
+    },
+    "date": "2025-11-23T10:00:00Z",
+    "endDate": "2025-11-26T21:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "أرض المعارض الكويت",
+        "en": "Kuwait International Fairground"
+      },
+      "city": {
+        "ar": "الكويت",
+        "en": "Kuwait City"
+      },
+      "state": {
+        "ar": "الكويت",
+        "en": "Kuwait"
+      },
+      "country": {
+        "ar": "الكويت",
+        "en": "Kuwait"
+      }
+    },
+    "category": {
+      "ar": "تصميم",
+      "en": "Design"
+    },
+    "tags": {
+      "ar": [
+        "تصميم داخلي",
+        "أثاث",
+        "ديكور",
+        "معرض",
+        "منزل"
+      ],
+      "en": [
+        "interior-design",
+        "furniture",
+        "decor",
+        "expo",
+        "home"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=630",
+    "price": 30,
+    "attendeeCount": 3850,
+    "maxAttendees": 6000,
+    "organizer": {
+      "name": {
+        "ar": "رابطة المصممين الكويتيين",
+        "en": "Kuwait Designers Association"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Kuwait+Designers+Association&background=2563eb&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-09-12T10:00:00Z"
+  },
+  {
+    "id": "25",
+    "slug": {
+      "ar": "مؤتمر-التعليم-الرقمي-ابوظبي",
+      "en": "digital-education-conference-abu-dhabi"
+    },
+    "title": {
+      "ar": "مؤتمر التعليم الرقمي",
+      "en": "Digital Education Conference"
+    },
+    "description": {
+      "ar": "استكشف مستقبل التعليم مع التكنولوجيا والذكاء الاصطناعي.",
+      "en": "Explore the future of education with technology and artificial intelligence."
+    },
+    "longDescription": {
+      "ar": "مؤتمر التعليم الرقمي في أبوظبي يجمع المعلمين والإداريين وصانعي السياسات ومطوري التكنولوجيا التعليمية. تشمل المواضيع التعلم عن بعد والفصول الذكية والذكاء الاصطناعي في التعليم والألعاب التعليمية. عروض توضيحية حية للمنصات التعليمية الحديثة وورش عمل للمعلمين. جلسات رئيسية من خبراء التعليم العالميين ودراسات حالة من مدارس رائدة.",
+      "en": "The Digital Education Conference in Abu Dhabi brings together teachers, administrators, policymakers, and edtech developers. Topics include distance learning, smart classrooms, AI in education, and educational gaming. Live demonstrations of modern educational platforms and workshops for teachers. Keynote sessions from global education experts and case studies from leading schools."
+    },
+    "date": "2025-12-04T09:00:00Z",
+    "endDate": "2025-12-05T17:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز أبوظبي الوطني للمعارض",
+        "en": "Abu Dhabi National Exhibition Centre"
+      },
+      "city": {
+        "ar": "أبوظبي",
+        "en": "Abu Dhabi"
+      },
+      "state": {
+        "ar": "أبوظبي",
+        "en": "Abu Dhabi"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "UAE"
+      }
+    },
+    "category": {
+      "ar": "تعليم",
+      "en": "Education"
+    },
+    "tags": {
+      "ar": [
+        "تعليم",
+        "تكنولوجيا",
+        "مؤتمر",
+        "ذكاء اصطناعي",
+        "احترافي"
+      ],
+      "en": [
+        "education",
+        "technology",
+        "conference",
+        "AI",
+        "professional"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=630",
+    "price": 150,
+    "attendeeCount": 680,
+    "maxAttendees": 1000,
+    "organizer": {
+      "name": {
+        "ar": "وزارة التربية والتعليم الإماراتية",
+        "en": "UAE Ministry of Education"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=UAE+Ministry+Education&background=15803d&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-10-10T10:00:00Z"
+  },
+  {
+    "id": "26",
+    "slug": {
+      "ar": "بطولة-الجولف-الخيرية-دبي",
+      "en": "charity-golf-tournament-dubai"
+    },
+    "title": {
+      "ar": "بطولة الجولف الخيرية",
+      "en": "Charity Golf Tournament"
+    },
+    "description": {
+      "ar": "بطولة جولف احترافية لجمع التبرعات للجمعيات الخيرية المحلية.",
+      "en": "Professional golf tournament to raise funds for local charities."
+    },
+    "longDescription": {
+      "ar": "انضم إلينا في بطولة الجولف الخيرية السنوية في دبي حيث يتنافس لاعبون محترفون وهواة لدعم القضايا الإنسانية المحلية. يتم التبرع بجميع العائدات لمؤسسات تعليمية وصحية خيرية. تشمل الفعالية مسابقة الجولف وحفل عشاء فاخر ومزاد صامت لعناصر حصرية. مناسب للاعبين من جميع المستويات. الحد الأدنى للتبرع 500 درهم.",
+      "en": "Join us for the annual Charity Golf Tournament in Dubai where professional and amateur players compete to support local humanitarian causes. All proceeds donated to educational and health charities. Event includes golf competition, luxury dinner gala, and silent auction for exclusive items. Suitable for players of all levels. Minimum donation 500 AED."
+    },
+    "date": "2025-12-06T07:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "نادي دبي للجولف",
+        "en": "Dubai Golf Club"
+      },
+      "city": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "state": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "UAE"
+      }
+    },
+    "category": {
+      "ar": "رياضة",
+      "en": "Sports"
+    },
+    "tags": {
+      "ar": [
+        "جولف",
+        "رياضة",
+        "خيري",
+        "بطولة",
+        "احترافي"
+      ],
+      "en": [
+        "golf",
+        "sports",
+        "charity",
+        "tournament",
+        "professional"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1200&h=630",
+    "price": 500,
+    "attendeeCount": 120,
+    "maxAttendees": 150,
+    "organizer": {
+      "name": {
+        "ar": "مؤسسة دبي الخيرية",
+        "en": "Dubai Charity Foundation"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Dubai+Charity+Foundation&background=c026d3&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-10-04T10:00:00Z"
+  },
+  {
+    "id": "27",
+    "slug": {
+      "ar": "مهرجان-الفنون-الرقمية-الرياض",
+      "en": "digital-arts-festival-riyadh"
+    },
+    "title": {
+      "ar": "مهرجان الفنون الرقمية",
+      "en": "Digital Arts Festival"
+    },
+    "description": {
+      "ar": "احتفال بالفن الرقمي والواقع الافتراضي والتركيبات التفاعلية.",
+      "en": "A celebration of digital art, virtual reality, and interactive installations."
+    },
+    "longDescription": {
+      "ar": "يعرض مهرجان الفنون الرقمية في الرياض أعمال فنانين رقميين مبدعين من جميع أنحاء العالم. استكشف تجارب الواقع الافتراضي والمعزز والتركيبات التفاعلية وفن NFT والرسوم المتحركة ثلاثية الأبعاد. ورش عمل يومية حول التصميم الرقمي والرسم الرقمي والرسوم المتحركة. مناسب لجميع الأعمار مع منطقة خاصة للأطفال. دخول مجاني.",
+      "en": "The Digital Arts Festival in Riyadh showcases the work of creative digital artists from around the world. Explore virtual and augmented reality experiences, interactive installations, NFT art, and 3D animation. Daily workshops on digital design, digital painting, and animation. Suitable for all ages with special kids zone. Free entry."
+    },
+    "date": "2025-12-11T14:00:00Z",
+    "endDate": "2025-12-15T22:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "حي جاكس",
+        "en": "JAX District"
+      },
+      "city": {
+        "ar": "الرياض",
+        "en": "Riyadh"
+      },
+      "state": {
+        "ar": "الرياض",
+        "en": "Riyadh"
+      },
+      "country": {
+        "ar": "السعودية",
+        "en": "Saudi Arabia"
+      }
+    },
+    "category": {
+      "ar": "فن",
+      "en": "Art"
+    },
+    "tags": {
+      "ar": [
+        "فن رقمي",
+        "واقع افتراضي",
+        "تكنولوجيا",
+        "مهرجان",
+        "عائلي"
+      ],
+      "en": [
+        "digital-art",
+        "virtual-reality",
+        "technology",
+        "festival",
+        "family-friendly"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=630",
+    "price": "free",
+    "attendeeCount": 4200,
+    "maxAttendees": 8000,
+    "organizer": {
+      "name": {
+        "ar": "هيئة الفنون السعودية",
+        "en": "Saudi Arts Authority"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Saudi+Arts+Authority&background=0891b2&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-10-22T10:00:00Z"
+  },
+  {
+    "id": "28",
+    "slug": {
+      "ar": "ورشة-الطبخ-الشرق-اوسطي-القاهرة",
+      "en": "middle-eastern-cooking-workshop-cairo"
+    },
+    "title": {
+      "ar": "ورشة الطبخ الشرق أوسطي",
+      "en": "Middle Eastern Cooking Workshop"
+    },
+    "description": {
+      "ar": "تعلم فن الطبخ الشرق أوسطي الأصيل من طهاة محترفين.",
+      "en": "Learn the art of authentic Middle Eastern cooking from professional chefs."
+    },
+    "longDescription": {
+      "ar": "انضم إلى ورشة الطبخ الشرق أوسطي وتعلم كيفية تحضير أطباق كلاسيكية مثل المحشي والكبسة والمنسف والحلويات العربية. يقدم الورشة طهاة مشهورون يشاركون أسرار الطبخ التقليدي. تشمل جميع المكونات والأدوات. وجبة غداء جماعية بعد الورشة. محدودة بـ 25 مشاركاً. مناسبة للمبتدئين والطهاة الهواة.",
+      "en": "Join the Middle Eastern Cooking Workshop and learn how to prepare classic dishes like stuffed vegetables, kabsa, mansaf, and Arab sweets. Led by renowned chefs sharing traditional cooking secrets. All ingredients and tools included. Group lunch after workshop. Limited to 25 participants. Suitable for beginners and amateur cooks."
+    },
+    "date": "2025-12-07T10:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مدرسة نايل كولينري",
+        "en": "Nile Culinary School"
+      },
+      "city": {
+        "ar": "القاهرة",
+        "en": "Cairo"
+      },
+      "state": {
+        "ar": "القاهرة",
+        "en": "Cairo"
+      },
+      "country": {
+        "ar": "مصر",
+        "en": "Egypt"
+      }
+    },
+    "category": {
+      "ar": "طعام",
+      "en": "Food"
+    },
+    "tags": {
+      "ar": [
+        "طبخ",
+        "ورشة عمل",
+        "طعام",
+        "تعليم",
+        "ثقافة"
+      ],
+      "en": [
+        "cooking",
+        "workshop",
+        "food",
+        "education",
+        "culture"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&h=630",
+    "price": 80,
+    "attendeeCount": 19,
+    "maxAttendees": 25,
+    "organizer": {
+      "name": {
+        "ar": "أكاديمية الطهي المصرية",
+        "en": "Egyptian Culinary Academy"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Egyptian+Culinary+Academy&background=ca8a04&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-10-28T10:00:00Z"
+  },
+  {
+    "id": "29",
+    "slug": {
+      "ar": "معرض-الروبوتات-دبي",
+      "en": "robotics-expo-dubai"
+    },
+    "title": {
+      "ar": "معرض الروبوتات والأتمتة",
+      "en": "Robotics & Automation Expo"
+    },
+    "description": {
+      "ar": "اكتشف أحدث التطورات في الروبوتات والأتمتة الصناعية.",
+      "en": "Discover the latest developments in robotics and industrial automation."
+    },
+    "longDescription": {
+      "ar": "معرض الروبوتات في دبي يعرض أحدث الابتكارات في الروبوتات الصناعية والخدمية والطبية والتعليمية. شاهد عروضاً حية للروبوتات العاملة ومسابقات الروبوتات وورش عمل البرمجة للأطفال والبالغين. يضم أكثر من 100 عارض من شركات عالمية ومحلية. مثالي للمهندسين ورجال الأعمال والطلاب والعائلات المهتمة بالتكنولوجيا.",
+      "en": "The Robotics Expo in Dubai showcases the latest innovations in industrial, service, medical, and educational robotics. Watch live demonstrations of working robots, robot competitions, and programming workshops for children and adults. Features 100+ exhibitors from global and local companies. Perfect for engineers, businesspeople, students, and tech-interested families."
+    },
+    "date": "2025-12-13T10:00:00Z",
+    "endDate": "2025-12-15T19:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مركز دبي التجاري العالمي",
+        "en": "Dubai World Trade Centre"
+      },
+      "city": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "state": {
+        "ar": "دبي",
+        "en": "Dubai"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "UAE"
+      }
+    },
+    "category": {
+      "ar": "تكنولوجيا",
+      "en": "Technology"
+    },
+    "tags": {
+      "ar": [
+        "روبوتات",
+        "أتمتة",
+        "تكنولوجيا",
+        "معرض",
+        "ابتكار"
+      ],
+      "en": [
+        "robotics",
+        "automation",
+        "technology",
+        "expo",
+        "innovation"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630",
+    "price": 70,
+    "attendeeCount": 2950,
+    "maxAttendees": 5000,
+    "organizer": {
+      "name": {
+        "ar": "مركز دبي للروبوتات",
+        "en": "Dubai Robotics Center"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Dubai+Robotics+Center&background=9333ea&color=fff&size=128"
+    },
+    "featured": true,
+    "createdAt": "2025-10-26T10:00:00Z"
+  },
+  {
+    "id": "30",
+    "slug": {
+      "ar": "مهرجان-الهندسة-المعمارية-الدوحة",
+      "en": "architecture-festival-doha"
+    },
+    "title": {
+      "ar": "مهرجان الهندسة المعمارية والتصميم",
+      "en": "Architecture & Design Festival"
+    },
+    "description": {
+      "ar": "احتفال بالهندسة المعمارية والتصميم الحضري المعاصر.",
+      "en": "A celebration of contemporary architecture and urban design."
+    },
+    "longDescription": {
+      "ar": "يسلط مهرجان الهندسة المعمارية في الدوحة الضوء على أفضل التصاميم المعمارية والحضرية في قطر والمنطقة. يتضمن جولات معمارية في المباني الأيقونية، ومحاضرات من مهندسين معماريين عالميين، ومعارض للمشاريع المستقبلية. ورش عمل حول التصميم المستدام والعمارة الخضراء. مفتوح للمهندسين والطلاب والمهتمين بالعمارة.",
+      "en": "The Architecture Festival in Doha highlights the best architectural and urban designs in Qatar and the region. Includes architectural tours of iconic buildings, lectures by world-renowned architects, and exhibitions of future projects. Workshops on sustainable design and green architecture. Open to engineers, students, and architecture enthusiasts."
+    },
+    "date": "2025-12-01T09:00:00Z",
+    "endDate": "2025-12-04T18:00:00Z",
+    "location": {
+      "venue": {
+        "ar": "مطافئ: مقر الفنانين",
+        "en": "Mathaf: Arab Museum of Modern Art"
+      },
+      "city": {
+        "ar": "الدوحة",
+        "en": "Doha"
+      },
+      "state": {
+        "ar": "الدوحة",
+        "en": "Doha"
+      },
+      "country": {
+        "ar": "قطر",
+        "en": "Qatar"
+      }
+    },
+    "category": {
+      "ar": "تصميم",
+      "en": "Design"
+    },
+    "tags": {
+      "ar": [
+        "هندسة معمارية",
+        "تصميم",
+        "عمارة",
+        "مهرجان",
+        "ثقافة"
+      ],
+      "en": [
+        "architecture",
+        "design",
+        "urban",
+        "festival",
+        "culture"
+      ]
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=630",
+    "price": 55,
+    "attendeeCount": 780,
+    "maxAttendees": 1200,
+    "organizer": {
+      "name": {
+        "ar": "جمعية المهندسين المعماريين القطرية",
+        "en": "Qatar Architects Association"
+      },
+      "avatar": "https://ui-avatars.com/api/?name=Qatar+Architects+Association&background=22c55e&color=fff&size=128"
+    },
+    "featured": false,
+    "createdAt": "2025-09-08T10:00:00Z"
   }
 ]
