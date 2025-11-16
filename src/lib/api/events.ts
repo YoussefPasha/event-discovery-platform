@@ -11,8 +11,6 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
  * @returns Flattened event with locale-specific strings
  */
 function localizeEvent(event: LocalizedEvent, locale: Locale): Event {
-  console.log(event.title[locale]);
-
   return {
     id: event.id,
     slug: event.slug[locale],
@@ -98,11 +96,13 @@ export async function getEvents(
         morocco: ["morocco", "المغرب"],
         tunisia: ["tunisia", "تونس"],
       };
-      
+
       const eventCountry = event.location.country.toLowerCase();
-      return countryNames[countryKey]?.some((name) => 
-        eventCountry.includes(name.toLowerCase())
-      ) || false;
+      return (
+        countryNames[countryKey]?.some((name) =>
+          eventCountry.includes(name.toLowerCase())
+        ) || false
+      );
     });
   }
 

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -10,7 +11,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Event Discovery Logo"
+                width={36}
+                height={36}
+                className="w-9 h-9"
+              />
               <span className="font-bold text-xl text-white">
                 {t("brandName")}
               </span>
