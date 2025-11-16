@@ -32,7 +32,7 @@ export default async function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/events"
+                  href="/"
                   className="text-sm hover:text-white transition-colors"
                 >
                   {t("browseEvents")}

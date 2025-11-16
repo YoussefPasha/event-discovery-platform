@@ -8,14 +8,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages for both locales
   const staticPages: MetadataRoute.Sitemap = [
     {
-      url: `${baseUrl}/en/events`,
+      url: `${baseUrl}/en`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
       alternates: {
         languages: {
-          en: `${baseUrl}/en/events`,
-          ar: `${baseUrl}/ar/events`,
+          en: `${baseUrl}/en`,
+          ar: `${baseUrl}/ar`,
         },
       },
     },

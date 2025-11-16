@@ -10,6 +10,9 @@ export default function Header() {
   const pathname = usePathname();
 
   const isActive = (path: string) => {
+    if (path === "/") {
+      return pathname === "/";
+    }
     return pathname.startsWith(path);
   };
 
@@ -26,7 +29,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/events" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="Event Discovery Logo"
@@ -43,8 +46,8 @@ export default function Header() {
           {/* Navigation */}
           <nav className="flex items-center gap-6">
             <Link
-              href="/events"
-              className={getLinkClassName("/events")}
+              href="/"
+              className={getLinkClassName("/")}
             >
               {t("events")}
             </Link>

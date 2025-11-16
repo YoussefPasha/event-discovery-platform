@@ -216,3 +216,15 @@ export async function getCountries(
 
   return countries;
 }
+
+export function getAllEventSlugs(): Array<{ slug: string }> {
+  const localizedEvents = mockEvents as LocalizedEvent[];
+  const slugs: Array<{ slug: string }> = [];
+
+  localizedEvents.forEach((event) => {
+    slugs.push({ slug: event.slug.en });
+    slugs.push({ slug: event.slug.ar });
+  });
+
+  return slugs;
+}

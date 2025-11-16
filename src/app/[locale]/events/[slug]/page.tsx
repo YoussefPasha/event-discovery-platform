@@ -9,6 +9,7 @@ import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import type { Event } from "@/types/event";
 import { getBaseUrl } from "@/lib/api/base-url";
+import { getAllEventSlugs } from "@/lib/api/events";
 
 interface PageProps {
   params: Promise<{
@@ -19,17 +20,7 @@ interface PageProps {
 
 export async function generateStaticParams() {
   try {
-    const baseUrl = getBaseUrl();
-    const response = await fetch(`${baseUrl}/api/events/slugs`, {
-      next: { revalidate: 3600 },
-    });
-
-    if (!response.ok) {
-      throw new Error("Failed to fetch event slugs");
-    }
-
-    const data = await response.json();
-    return data.slugs || [];
+    return getAllEventSlugs();
   } catch (error) {
     console.error("Error in generateStaticParams:", error);
     return [];
