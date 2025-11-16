@@ -31,6 +31,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
       },
     },
+    {
+      url: `${baseUrl}/en/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/privacy`,
+          ar: `${baseUrl}/ar/privacy`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/terms`,
+          ar: `${baseUrl}/ar/terms`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/contact`,
+          ar: `${baseUrl}/ar/contact`,
+        },
+      },
+    },
   ];
 
   // Event detail pages for both locales

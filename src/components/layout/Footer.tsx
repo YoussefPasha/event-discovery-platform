@@ -12,25 +12,24 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="font-bold text-xl text-white">
-                Event Discovery
+                {t("brandName")}
               </span>
             </div>
             <p className="text-sm text-gray-400">
-              Discover and book amazing events in your area. From concerts to
-              conferences, find what inspires you.
+              {t("brandDescription")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-white mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/events"
                   className="text-sm hover:text-white transition-colors"
                 >
-                  Browse Events
+                  {t("browseEvents")}
                 </Link>
               </li>
               <li>
@@ -38,7 +37,7 @@ export default function Footer() {
                   href="/tickets"
                   className="text-sm hover:text-white transition-colors"
                 >
-                  My Tickets
+                  {t("myTickets")}
                 </Link>
               </li>
             </ul>
@@ -46,31 +45,31 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Legal</h3>
+            <h3 className="font-semibold text-white mb-4">{t("legal")}</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/privacy"
                   className="text-sm hover:text-white transition-colors"
                 >
                   {t("privacy")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/terms"
                   className="text-sm hover:text-white transition-colors"
                 >
                   {t("terms")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="text-sm hover:text-white transition-colors"
                 >
                   {t("contact")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
