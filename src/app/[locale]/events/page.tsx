@@ -1,6 +1,7 @@
 import EventFilters from "@/components/events/EventFilters";
 import EventGrid from "@/components/events/EventGrid";
 import { EventGridSkeleton } from "@/components/ui/LoadingSkeleton";
+import { getBaseUrl } from "@/lib/api/base-url";
 import { Event } from "@/types/event";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -49,7 +50,7 @@ async function getEvents(
       }
     });
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3001";
+    const baseUrl = getBaseUrl();
     const url = `${baseUrl}/api/events?${decodeURIComponent(
       queryParams.toString()
     )}`;

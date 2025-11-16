@@ -8,16 +8,13 @@ import { Link } from "@/i18n/routing";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import type { Event } from "@/types/event";
+import { getBaseUrl } from "@/lib/api/base-url";
 
 interface PageProps {
   params: Promise<{
     slug: string;
     locale: string;
   }>;
-}
-
-function getBaseUrl() {
-  return process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3001";
 }
 
 export async function generateStaticParams() {

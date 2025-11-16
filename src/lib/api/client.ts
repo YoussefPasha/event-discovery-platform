@@ -1,7 +1,3 @@
-/**
- * Client-side API utility functions for fetching data from Next.js API routes
- */
-
 export interface Category {
   name: string;
 }
@@ -11,9 +7,6 @@ export interface Country {
   name: string;
 }
 
-/**
- * Fetches categories from the API
- */
 export async function fetchCategories(): Promise<string[]> {
   const response = await fetch("/api/categories");
   if (!response.ok) {
@@ -23,9 +16,6 @@ export async function fetchCategories(): Promise<string[]> {
   return data.categories;
 }
 
-/**
- * Fetches countries from the API
- */
 export async function fetchCountries(): Promise<Country[]> {
   const response = await fetch("/api/countries");
   if (!response.ok) {
@@ -34,4 +24,3 @@ export async function fetchCountries(): Promise<Country[]> {
   const data = await response.json();
   return data.countries;
 }
-
