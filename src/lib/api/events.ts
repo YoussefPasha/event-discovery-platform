@@ -44,7 +44,7 @@ function localizeEvent(event: LocalizedEvent, locale: Locale): Event {
 
 /**
  * Fetches events with optional filtering
- * @param filters - Optional filters for search, category, location, date, and price
+ * @param filters - Optional filters for search, category, country, and price
  * @param locale - The locale for localized content (defaults to 'en')
  * @returns Filtered and sorted array of events
  */
@@ -82,16 +82,28 @@ export async function getEvents(
     );
   }
 
-  if (filters?.startDate) {
-    events = events.filter(
-      (event) => new Date(event.date) >= new Date(filters.startDate!)
-    );
-  }
-
-  if (filters?.endDate) {
-    events = events.filter(
-      (event) => new Date(event.date) <= new Date(filters.endDate!)
-    );
+  if (filters?.country && filters.country !== "all") {
+    events = events.filter((event) => {
+      const countryKey = filters.country!;
+      // Map country keys to their possible English and Arabic names
+      const countryNames: Record<string, string[]> = {
+        egypt: ["egypt", "مصر"],
+        saudi: ["saudi arabia", "المملكة العربية السعودية"],
+        uae: ["united arab emirates", "الإمارات العربية المتحدة"],
+        qatar: ["qatar", "قطر"],
+        kuwait: ["kuwait", "الكويت"],
+        bahrain: ["bahrain", "البحرين"],
+        jordan: ["jordan", "الأردن"],
+        lebanon: ["lebanon", "لبنان"],
+        morocco: ["morocco", "المغرب"],
+        tunisia: ["tunisia", "تونس"],
+      };
+      
+      const eventCountry = event.location.country.toLowerCase();
+      return countryNames[countryKey]?.some((name) => 
+        eventCountry.includes(name.toLowerCase())
+      ) || false;
+    });
   }
 
   if (filters?.priceRange === "free") {

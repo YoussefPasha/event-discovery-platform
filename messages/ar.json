@@ -34,13 +34,29 @@
   },
   "filters": {
     "searchPlaceholder": "ابحث بالعنوان أو الوصف أو الوسوم...",
-    "selectCategory": "اختر الفئة",
+    "selectCategory": "كل الفئات",
+    "selectCountry": "كل الدول",
     "locationPlaceholder": "أدخل المدينة أو البلد",
     "startDate": "تاريخ البدء",
     "endDate": "تاريخ الانتهاء",
     "priceRange": "نطاق السعر",
+    "allPriceRanges": "كل نطاقات الأسعار",
+    "freeEvents": "فعاليات مجانية",
+    "paidEvents": "فعاليات مدفوعة",
     "clearFilters": "مسح الفلاتر",
-    "applyFilters": "تطبيق الفلاتر"
+    "applyFilters": "تطبيق الفلاتر",
+    "countries": {
+      "egypt": "مصر",
+      "saudi": "المملكة العربية السعودية",
+      "uae": "الإمارات العربية المتحدة",
+      "qatar": "قطر",
+      "kuwait": "الكويت",
+      "bahrain": "البحرين",
+      "jordan": "الأردن",
+      "lebanon": "لبنان",
+      "morocco": "المغرب",
+      "tunisia": "تونس"
+    }
   },
   "eventDetail": {
     "aboutEvent": "عن هذه الفعالية",

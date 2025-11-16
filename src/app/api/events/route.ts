@@ -14,8 +14,7 @@ export async function GET(request: NextRequest) {
       search: searchParams.get("search") || undefined,
       category: searchParams.get("category") || undefined,
       location: searchParams.get("location") || undefined,
-      startDate: searchParams.get("startDate") || undefined,
-      endDate: searchParams.get("endDate") || undefined,
+      country: searchParams.get("country") || undefined,
       priceRange:
         (searchParams.get("priceRange") as "free" | "paid" | "all") ||
         undefined,

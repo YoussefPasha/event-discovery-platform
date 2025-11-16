@@ -34,13 +34,29 @@
   },
   "filters": {
     "searchPlaceholder": "Search by title, description, or tags...",
-    "selectCategory": "Select Category",
+    "selectCategory": "All Categories",
+    "selectCountry": "All Countries",
     "locationPlaceholder": "Enter city or country",
     "startDate": "Start Date",
     "endDate": "End Date",
     "priceRange": "Price Range",
+    "allPriceRanges": "All Price Ranges",
+    "freeEvents": "Free Events",
+    "paidEvents": "Paid Events",
     "clearFilters": "Clear Filters",
-    "applyFilters": "Apply Filters"
+    "applyFilters": "Apply Filters",
+    "countries": {
+      "egypt": "Egypt",
+      "saudi": "Saudi Arabia",
+      "uae": "United Arab Emirates",
+      "qatar": "Qatar",
+      "kuwait": "Kuwait",
+      "bahrain": "Bahrain",
+      "jordan": "Jordan",
+      "lebanon": "Lebanon",
+      "morocco": "Morocco",
+      "tunisia": "Tunisia"
+    }
   },
   "eventDetail": {
     "aboutEvent": "About this event",

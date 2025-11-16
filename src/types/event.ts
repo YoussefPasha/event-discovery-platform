@@ -70,8 +70,7 @@ export interface EventFilters {
   search?: string;
   category?: string;
   location?: string;
-  startDate?: string;
-  endDate?: string;
+  country?: string;
   priceRange?: 'free' | 'paid' | 'all';
 }
 

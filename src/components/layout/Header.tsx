@@ -1,9 +1,24 @@
-import { Link } from "@/i18n/routing";
+"use client";
+
+import { Link, usePathname } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    return pathname.startsWith(path);
+  };
+
+  const getLinkClassName = (path: string) => {
+    const baseClasses = "font-medium transition-colors";
+    const activeClasses = "text-blue-600 border-b-2 border-blue-600 pb-[2px]";
+    const inactiveClasses = "text-gray-700 hover:text-blue-600";
+    
+    return `${baseClasses} ${isActive(path) ? activeClasses : inactiveClasses}`;
+  };
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -20,13 +35,13 @@ export default function Header() {
           <nav className="flex items-center gap-6">
             <Link
               href="/events"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={getLinkClassName("/events")}
             >
               {t("events")}
             </Link>
             <Link
               href="/tickets"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={getLinkClassName("/tickets")}
             >
               {t("tickets")}
             </Link>
