@@ -105,33 +105,70 @@ The architecture supports adding:
 - Advanced analytics (event tracking hooks throughout)
 - Progressive Web App features (service worker ready)
 
-# Build (SSG, SSR, ISR)
+## Build & Rendering Strategy
 
+This section provides an overview of the application's build output and rendering strategies for each route. The platform uses a hybrid approach combining Static Site Generation (SSG), Server-Side Rendering (SSR), and dynamic API routes to optimize for performance and SEO.
+
+### Route Legend
+
+| Symbol | Type | Description |
+|--------|------|-------------|
+| **○** | Static | Pre-rendered at build time (SSG) |
+| **●** | Static + Data | Pre-rendered with data at build time (SSG with data fetching) |
+| **ƒ** | Dynamic | Server-rendered on demand (SSR) or API route |
+
+### Application Routes
+
+```
 Route (app)
-┌ ○ /_not-found
-├ ƒ /[locale]
-├ ƒ /[locale]/[...rest]
-├ ● /[locale]/contact
-│ ├ /en/contact
-│ └ /ar/contact
-├ ● /[locale]/events/[slug]
-│ ├ /en/events/tech-summit-dubai-2025
-│ ├ /en/events/قمة-التكنولوجيا-دبي-2025
-│ ├ /en/events/arabic-music-festival-riyadh
-│ └ [+117 more paths]
-├ ƒ /[locale]/events/[slug]/book
-├ ● /[locale]/privacy
-│ ├ /en/privacy
-│ └ /ar/privacy
-├ ● /[locale]/terms
-│ ├ /en/terms
-│ └ /ar/terms
-├ ƒ /[locale]/tickets
-├ ƒ /api/bookings
-├ ƒ /api/categories
-├ ƒ /api/countries
-├ ƒ /api/events
-├ ƒ /api/events/[slug]
-├ ƒ /api/events/slugs
-├ ○ /robots.txt
-└ ○ /sitemap.xml
+┌─ ○  /_not-found                          # Custom 404 page (static)
+│
+├─ Public Pages
+│  ├─ ƒ  /[locale]                         # Home page (dynamic for filters)
+│  ├─ ƒ  /[locale]/[...rest]               # Catch-all fallback route
+│  ├─ ●  /[locale]/contact                 # Contact page (2 locales)
+│  │     ├─ /en/contact
+│  │     └─ /ar/contact
+│  ├─ ●  /[locale]/events/[slug]           # Event detail pages (120 total)
+│  │     ├─ /en/events/tech-summit-dubai-2025
+│  │     ├─ /en/events/قمة-التكنولوجيا-دبي-2025
+│  │     ├─ /en/events/arabic-music-festival-riyadh
+│  │     └─ [+117 more paths]
+│  ├─ ƒ  /[locale]/events/[slug]/book      # Booking page (dynamic)
+│  ├─ ●  /[locale]/privacy                 # Privacy policy (2 locales)
+│  │     ├─ /en/privacy
+│  │     └─ /ar/privacy
+│  ├─ ●  /[locale]/terms                   # Terms of service (2 locales)
+│  │     ├─ /en/terms
+│  │     └─ /ar/terms
+│  └─ ƒ  /[locale]/tickets                 # User tickets page (dynamic)
+│
+├─ API Routes
+│  ├─ ƒ  /api/bookings                     # Create/fetch bookings
+│  ├─ ƒ  /api/categories                   # List event categories
+│  ├─ ƒ  /api/countries                    # List countries
+│  ├─ ƒ  /api/events                       # List/search events
+│  ├─ ƒ  /api/events/[slug]                # Get single event by slug
+│  └─ ƒ  /api/events/slugs                 # Get all event slugs
+│
+└─ System Routes
+   ├─ ○  /robots.txt                       # Search engine directives
+   └─ ○  /sitemap.xml                      # Dynamic sitemap (120 events)
+```
+
+### Build Statistics
+
+- **Total Routes**: 137 routes generated
+- **Static Pages**: 4 (system + 404)
+- **Static with Data**: 124 (event pages + legal pages in 2 locales)
+- **Dynamic Routes**: 9 (API routes + interactive pages)
+- **Bilingual Support**: English (en) & Arabic (ar)
+- **Pre-rendered Events**: 120 event pages (60 per locale)
+
+### Performance Impact
+
+The hybrid rendering strategy ensures:
+- **Fast Initial Load**: Static pages load instantly from CDN
+- **SEO Optimization**: All event pages pre-rendered with full metadata
+- **Fresh Data**: Dynamic API routes provide real-time booking availability
+- **Reduced Server Load**: 124/137 routes served statically without server computation
